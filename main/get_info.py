@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from dateutil import tz
 import json
+import locale
 import pprint
 import requests
 
@@ -27,6 +28,7 @@ def get_match_info_by_api():
         json.dump(r_get.json(), f, indent=4)
     
 def test_get_info_from_json():
+    locale.setlocale(locale.LC_ALL, 'ja_JP.UTF-8')
     return_list = []
     JST = tz.gettz('Asia/Tokyo')
     UTC = tz.gettz("UTC")
@@ -34,19 +36,13 @@ def test_get_info_from_json():
         input_dict = json.load(f)
         for match in input_dict['matches']:
             utctime = datetime.strptime(match['utcDate'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=UTC).astimezone(JST)
-            output_time = utctime.strftime('%Y-%m-%d %H:%M')
+            output_time = utctime.strftime('%Y-%m-%d %H:%M (%a)')
             tmp_dict = {}
             tmp_dict['schedule'] = output_time
             tmp_dict['home_name'] = match['homeTeam']['name']
             tmp_dict['away_name'] = match['awayTeam']['name']
             return_list.append(tmp_dict)
-
-            # print(output_time)
-            # print(match['homeTeam']['name'])
-            # print(match['awayTeam']['name'])
-            # print('***************************')
     return return_list
-
 
 
 

@@ -43,6 +43,8 @@ def test_get_info_from_json():
             tmp_dict['schedule'] = output_time
             tmp_dict['home_name'] = localize.get_japanese_team_name(match['homeTeam']['name'])
             tmp_dict['away_name'] = localize.get_japanese_team_name(match['awayTeam']['name'])
+            tmp_dict['home_logo'] = match['homeTeam']['crest']
+            tmp_dict['away_logo'] = match['awayTeam']['crest']
             return_list.append(tmp_dict)
     return return_list
 

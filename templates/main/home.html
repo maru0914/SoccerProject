@@ -10,8 +10,8 @@
     {% for match in match_list %}
     <tr>
       <td>{{ match.schedule }}</td>
-      <td>{{ match.home_name }}</td>
-      <td>{{ match.away_name }}</td>
+      <td><img src={{ match.home_logo }} width="50" height="50" alt="" align="center"> {{ match.home_name }}</td>
+      <td><img src={{ match.away_logo }} width="50" height="50" alt="" align="center"> {{ match.away_name }}</td>
     </tr>
     {% endfor %}
   </table>

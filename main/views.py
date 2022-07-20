@@ -8,10 +8,16 @@ class HomeView(TemplateView):
     template_name = "main/home.html"
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        # first_match = {
-        #     'match_date': '2021-08-01',
-        #     'against': 'ウディネーゼ'
-        #     }
-        # context['first_match'] = first_match
         context['match_list'] = get_info.test_get_info_from_json()
+        return context
+
+
+class LeagueView(TemplateView):
+    template_name = "main/league.html"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        league_name = self.kwargs.get('league')
+        context['team_list'] = get_info.get_team_list(league_name)
+        context['league_name'] = league_name
+
         return context

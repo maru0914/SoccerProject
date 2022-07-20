@@ -48,5 +48,10 @@ def test_get_info_from_json():
             return_list.append(tmp_dict)
     return return_list
 
+def get_team_list(league_name):
 
-
+    with open(f'data/info_from_api/team_list_{league_name}.json', mode='r', encoding='utf-8') as f:
+        input_dict = json.load(f)
+        team_list = input_dict['teams']
+    
+    return team_list

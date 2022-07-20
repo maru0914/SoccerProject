@@ -1,2 +1,3 @@
-/data
+/data/temp
 /db.sqlite3
+__pycache__/

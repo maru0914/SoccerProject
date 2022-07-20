@@ -6,6 +6,8 @@ import locale
 import pprint
 import requests
 
+from utils import localize
+
 # try scraping  
 def get_match_info_by_scraping():
     target_url = 'https://www.espn.com/soccer/team/fixtures/_/id/103/ita.ac_milan'
@@ -39,8 +41,8 @@ def test_get_info_from_json():
             output_time = utctime.strftime('%Y-%m-%d %H:%M (%a)')
             tmp_dict = {}
             tmp_dict['schedule'] = output_time
-            tmp_dict['home_name'] = match['homeTeam']['name']
-            tmp_dict['away_name'] = match['awayTeam']['name']
+            tmp_dict['home_name'] = localize.get_japanese_team_name(match['homeTeam']['name'])
+            tmp_dict['away_name'] = localize.get_japanese_team_name(match['awayTeam']['name'])
             return_list.append(tmp_dict)
     return return_list
 

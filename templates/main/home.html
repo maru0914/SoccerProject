@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}ホーム画面 {{ block.super }}{% endblock %}
+{% block content %}
+  <table>
+    <tr>
+      <th>日程</th>
+      <th>ホームチーム</th>
+      <th>アウェーチーム</th>
+    </tr>
+    {% for match in match_list %}
+    <tr>
+      <td>{{ match.schedule }}</td>
+      <td>{{ match.home_name }}</td>
+      <td>{{ match.away_name }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+{% endblock %}

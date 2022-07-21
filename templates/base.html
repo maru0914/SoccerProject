@@ -2,9 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    {% block title %}サッカー便利サイト{% endblock %}
+    <title>{% block title %}サッカー便利サイト{% endblock %}</title>
   </head>
   <body>
+    <nav>
+      <a href="{% url 'main:home' %}">ホーム画面</a>
+      {% block nav %}{% endblock %}
+    </nav>
   {% block content %}{% endblock %}
   </body>
 </html>

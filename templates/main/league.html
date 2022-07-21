@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %} {{ league_code }} チーム一覧 {{ block.super }}{% endblock %}
+{% block content %}
+  <h1></h1>
+    {% for team in team_list.teams %}
+    <p>
+      <img src={{ team.crest }} width="50" height="50" alt="" align="center"> <a href="{% url 'main:team' id=team.id league_code=team_list.competition.code %}">{{ team.name }}</a>
+    </p>
+    {% endfor %}
+{% endblock %}

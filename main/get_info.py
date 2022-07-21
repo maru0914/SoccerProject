@@ -1,52 +1,41 @@
-from bs4 import BeautifulSoup
 from datetime import datetime
 from dateutil import tz
 import json
 import locale
-import pprint
 import requests
 
 from utils import localize
 
-# try scraping  
-def get_match_info_by_scraping():
-    target_url = 'https://www.espn.com/soccer/team/fixtures/_/id/103/ita.ac_milan'
-    html_text = requests.get(target_url).text
-    soup = BeautifulSoup(html_text, 'html.parser')
-    with open('sample_output.txt', 'w', encoding='utf-8') as f:
-        f.write(str(soup))
 
+def get_team_list(league_code):
 
-def get_match_info_by_api():
-    target_url = 'https://api.football-data.org/v4/teams/98/matches'
-    with open('data/temp/football_data_api_token.txt') as f:
-        access_token = f.read().strip()
+    with open(f'data/info_from_api/team_list_{league_code}.json', mode='r', encoding='utf-8') as f:
+        return json.load(f)
 
-    headers = {"X-Auth-Token" : access_token}
-    r_get = requests.get(target_url, headers=headers)
-    print(r_get.status_code)
-    pprint.pprint(r_get.json())
-    with open('sample.json', 'w') as f:
-        json.dump(r_get.json(), f, indent=4)
-    
-def test_get_info_from_json():
+def get_match_list(league_code, team_id):
     locale.setlocale(locale.LC_ALL, 'ja_JP.UTF-8')
-    return_list = []
+    match_list = []
     JST = tz.gettz('Asia/Tokyo')
     UTC = tz.gettz("UTC")
-    with open('sample.json', mode='r', encoding='utf-8') as f:
+    with open(f'data/info_from_api/match_list_{league_code}.json', mode='r', encoding='utf-8') as f:
         input_dict = json.load(f)
         for match in input_dict['matches']:
-            utctime = datetime.strptime(match['utcDate'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=UTC).astimezone(JST)
-            output_time = utctime.strftime('%Y-%m-%d %H:%M (%a)')
-            tmp_dict = {}
-            tmp_dict['schedule'] = output_time
-            tmp_dict['home_name'] = localize.get_japanese_team_name(match['homeTeam']['name'])
-            tmp_dict['away_name'] = localize.get_japanese_team_name(match['awayTeam']['name'])
-            tmp_dict['home_logo'] = match['homeTeam']['crest']
-            tmp_dict['away_logo'] = match['awayTeam']['crest']
-            return_list.append(tmp_dict)
-    return return_list
+            if team_id in (match['homeTeam']['id'], match['awayTeam']['id']):
+                utc_match_date = datetime.strptime(match['utcDate'], '%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=UTC).astimezone(JST)
+                output_date = utc_match_date.strftime('%Y-%m-%d %H:%M (%a)')
+                match_info = {}
+                match_info['schedule'] = output_date
+                match_info['home_name'] = localize.get_japanese_team_name(match['homeTeam']['name']) if league_code == 'SA' else match['homeTeam']['name']
+                match_info['away_name'] = localize.get_japanese_team_name(match['awayTeam']['name']) if league_code == 'SA' else match['awayTeam']['name']
+                match_info['home_logo'] = match['homeTeam']['crest']
+                match_info['away_logo'] = match['awayTeam']['crest']
+                match_list.append(match_info)
+    return match_list
 
-
+def get_team_name_from_id(league_code, team_id):
+    with open(f'data/info_from_api/team_list_{league_code}.json', mode='r', encoding='utf-8') as f:
+        input_dict = json.load(f)
+        for team in input_dict['teams']:
+            if team_id == team['id']:
+                return team['name']
 

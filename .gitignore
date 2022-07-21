@@ -2,3 +2,4 @@
 /data/info_from_api
 /db.sqlite3
 *.pyc
+test.py

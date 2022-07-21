@@ -8,6 +8,14 @@ class League(models.Model):
         db_table = 'league'
 
 
+class LeagueJapanese(models.Model):
+    league = models.OneToOneField(League, on_delete=models.CASCADE, primary_key=True)
+    name = models.CharField(max_length=40)
+
+    class Meta:
+        db_table = 'league_japanese'
+
+
 class Team(models.Model):
     name = models.CharField(max_length=40)
     crest = models.URLField(max_length=200)

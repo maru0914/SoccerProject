@@ -2,8 +2,8 @@
 {% block title %}ホーム画面 {{ block.super }}{% endblock %}
 {% block content %}
   <h1>ホーム画面</h1>
-  <p><a href="{% url 'main:league' league='PL' %}">プレミアリーグ</a></p>
-  <p><a href="{% url 'main:league' league='laliga' %}">ラ・リーガ</a></p>
-  <p><a href="{% url 'main:league' league='seriea' %}">セリエA</a></p>
-  <p><a href="{% url 'main:league' league='bundes' %}">ブンデスリーガ</a></p>
+  <p><a href="{% url 'main:league' league_code='PL' %}">プレミアリーグ</a></p>
+  <p><a href="{% url 'main:league' league_code='PD' %}">ラ・リーガ</a></p>
+  <p><a href="{% url 'main:league' league_code='SA' %}">セリエA</a></p>
+  <p><a href="{% url 'main:league' league_code='BL1' %}">ブンデスリーガ</a></p>
 {% endblock %}

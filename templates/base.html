@@ -5,6 +5,9 @@
     <title>{% block title %}サッカー便利サイト{% endblock %}</title>
   </head>
   <body>
+    <nav>
+      <a href="{% url 'main:home' %}">ホーム画面</a>
+    </nav>
   {% block content %}{% endblock %}
   </body>
 </html>

@@ -3,6 +3,6 @@
 {% block content %}
   <h1>{{ league_name }} チーム一覧</h1>
     {% for team in team_list %}
-    <p>{{ team.name }}</p>
+    <p><img src={{ team.crest }} width="50" height="50" alt="" align="center"> {{ team.name }}</p>
     {% endfor %}
 {% endblock %}

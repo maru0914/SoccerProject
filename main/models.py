@@ -2,7 +2,8 @@ from django.db import models
 
 
 class League(models.Model):
-    name = models.CharField(max_length=40, unique=True)
+    code = models.CharField(max_length=40, unique=True)
+    name = models.CharField(max_length=40)
     emblem = models.URLField(max_length=200, null=True)
 
     class Meta:

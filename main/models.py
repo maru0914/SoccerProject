@@ -3,6 +3,7 @@ from django.db import models
 
 class League(models.Model):
     name = models.CharField(max_length=40)
+    emblem = models.URLField(max_length=200)
 
     class Meta:
         db_table = 'league'

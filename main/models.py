@@ -56,3 +56,4 @@ class Match(models.Model):
     class Meta:
         db_table = 'match'
         constraints = [models.UniqueConstraint(fields=['match_day', 'home', 'away', 'season'], name='unique_match')]
+        ordering = ['date']

@@ -10,42 +10,43 @@
     </ol>
   </nav>
 </div>
+<div class="container">
+  <h1 class="pb-3">ホーム画面</h1>
   <div class="container">
-    <h1 class="pb-3">ホーム画面</h1>
-    <div class="container">
-      <div class="row">
-        <div class="card" style="width: 18rem;">
-          <a href="{% url 'main:league' league_code='PL' %}">
-            <img src="seriea.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">プレミアリーグ</p>
-            </div>
-          </a>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <a href="{% url 'main:league' league_code='PD' %}">
-            <img src="seriea.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">ラ・リーガ</p>
-            </div>
-          </a>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <a href="{% url 'main:league' league_code='SA' %}">
-            <img src="seriea.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">セリエA</p>
-            </div>
-          </a>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <a href="{% url 'main:league' league_code='BL1' %}">
-            <img src="seriea.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">ブンデスリーガ</p>
-            </div>
-          </a>
-        </div>
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'main:league' league_code='PL' %}">
+         <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="..."> 
+          <div class="card-body">
+            <p class="card-text">プレミアリーグ</p>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'main:league' league_code='PD' %}">
+          <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">ラ・リーガ</p>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'main:league' league_code='SA' %}">
+          <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">セリエA</p>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'main:league' league_code='BL1' %}">
+          <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">ブンデスリーガ</p>
+          </div>
+        </a>
       </div>
     </div>
+  </div>
+</div>
 {% endblock %}

@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load localize_tags %}
 {% block title %}日程画面 {{ block.super }}{% endblock %}
-{% block nav %} <a href="{% url 'main:league' league_code=league_code  %}">チーム一覧へ戻る</a> {% endblock %}
 {% block content %}
   <h1>{{ team.name | team_to_ja }} 日程</h1>
   <table>

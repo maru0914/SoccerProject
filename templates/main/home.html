@@ -1,9 +1,9 @@
 {% extends "base.html" %}
+{% load localize_tags %}
 {% block title %}ホーム画面 {{ block.super }}{% endblock %}
 {% block content %}
   <h1>ホーム画面</h1>
-  <p><a href="{% url 'main:league' league_code='PL' %}">プレミアリーグ</a></p>
-  <p><a href="{% url 'main:league' league_code='PD' %}">ラ・リーガ</a></p>
-  <p><a href="{% url 'main:league' league_code='SA' %}">セリエA</a></p>
-  <p><a href="{% url 'main:league' league_code='BL1' %}">ブンデスリーガ</a></p>
+  {% for league in object_list %}
+  <p><img src={{ league.emblem }} width="100" height="100" alt="" align="center"> <a href="{% url 'main:league' league_code=league.code %}">{{ league.name | league_to_ja }}</a></p>
+  {% endfor %}
 {% endblock %}

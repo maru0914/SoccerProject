@@ -1,8 +1,9 @@
 {% extends "base.html" %}
+{% load localize_tags %}
 {% block title %}日程画面 {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container">
-  <h1 class="pb-3">{{ team_name }} 日程</h1>
+  <h1 class="pb-3">{{ team.name | team_to_ja }} 日程</h1>
     <table class="table table-hover table align-middle">
       <thead>
         <tr>
@@ -14,9 +15,9 @@
       <tbody>
       {% for match in match_list %}
       <tr>
-        <td>{{ match.schedule }}</td>
-        <td><img src={{ match.home_logo }} width="50" height="50" alt="" align="center"> {{ match.home_name }}</td>
-        <td><img src={{ match.away_logo }} width="50" height="50" alt="" align="center"> {{ match.away_name }}</td>
+        <td>{{ match.date | date:"Y年n月j日(D) H:i" }}</td>
+        <td><img src={{ match.home.crest }} width="50" height="50" alt="" align="center"> {{ match.home.name | team_to_ja }}</td>
+        <td><img src={{ match.away.crest }} width="50" height="50" alt="" align="center"> {{ match.away.name | team_to_ja }}</td>
       </tr>
       {% endfor %}
     </tbody>

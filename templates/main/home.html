@@ -2,8 +2,29 @@
 {% load localize_tags %}
 {% block title %}ホーム画面 {{ block.super }}{% endblock %}
 {% block content %}
-  <h1>ホーム画面</h1>
-  {% for league in object_list %}
-  <p><img src={{ league.emblem }} width="100" height="100" alt="" align="center"> <a href="{% url 'main:league' league_code=league.code %}">{{ league.name | league_to_ja }}</a></p>
-  {% endfor %}
-
+<div class="container">
+  <nav
+    style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+    aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'main:home' %}">Home</a></li>
+    </ol>
+  </nav>
+</div>
+<div class="container">
+  <h1 class="pb-3">ホーム画面</h1>
+  <div class="container">
+    <div class="row">
+      {% for league in object_list %}
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'main:league' league_code=league.code %}">
+         <img src="{{ league.emblem }}" class="card-img-top" alt="..."> 
+          <div class="card-body">
+            <p class="card-text">{{ league.name | league_to_ja }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

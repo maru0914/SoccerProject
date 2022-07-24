@@ -6,4 +6,3 @@
   {% for league in object_list %}
   <p><img src={{ league.emblem }} width="100" height="100" alt="" align="center"> <a href="{% url 'main:league' league_code=league.code %}">{{ league.name | league_to_ja }}</a></p>
   {% endfor %}
-{% endblock %}

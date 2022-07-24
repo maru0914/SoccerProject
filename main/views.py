@@ -1,11 +1,12 @@
 from django.db.models import Q
-from django.views.generic import TemplateView
+from django.views.generic import ListView, TemplateView
 
 from main import get_info
-from main.models import Match, Team
+from main.models import League, Match, Team
 
 
-class HomeView(TemplateView):
+class HomeView(ListView):
+    model = League
     template_name = "main/home.html"
 
 

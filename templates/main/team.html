@@ -1,8 +1,9 @@
 {% extends "base.html" %}
+{% load localize_tags %}
 {% block title %}日程画面 {{ block.super }}{% endblock %}
 {% block nav %} <a href="{% url 'main:league' league_code=league_code  %}">チーム一覧へ戻る</a> {% endblock %}
 {% block content %}
-  <h1>{{ team.name }} 日程</h1>
+  <h1>{{ team.name | team_to_ja }} 日程</h1>
   <table>
     <tr>
       <th>日程</th>
@@ -11,9 +12,9 @@
     </tr>
     {% for match in match_list %}
     <tr>
-      <td>{{ match.date }}</td>
-      <td><img src={{ match.home.crest }} width="50" height="50" alt="" align="center"> {{ match.home.name }}</td>
-      <td><img src={{ match.away.crest }} width="50" height="50" alt="" align="center"> {{ match.away.name }}</td>
+      <td>{{ match.date | date:"Y年n月j日(D)H:i" }}</td>
+      <td><img src={{ match.home.crest }} width="50" height="50" alt="" align="center"> {{ match.home.name | team_to_ja }}</td>
+      <td><img src={{ match.away.crest }} width="50" height="50" alt="" align="center"> {{ match.away.name | team_to_ja }}</td>
     </tr>
     {% endfor %}
   </table>

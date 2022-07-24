@@ -1,9 +1,52 @@
 {% extends "base.html" %}
 {% block title %}ホーム画面 {{ block.super }}{% endblock %}
 {% block content %}
-  <h1>ホーム画面</h1>
-  <p><a href="{% url 'main:league' league_code='PL' %}">プレミアリーグ</a></p>
-  <p><a href="{% url 'main:league' league_code='PD' %}">ラ・リーガ</a></p>
-  <p><a href="{% url 'main:league' league_code='SA' %}">セリエA</a></p>
-  <p><a href="{% url 'main:league' league_code='BL1' %}">ブンデスリーガ</a></p>
+<div class="container">
+  <nav
+    style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+    aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'main:home' %}">Home</a></li>
+    </ol>
+  </nav>
+</div>
+<div class="container">
+  <h1 class="pb-3">ホーム画面</h1>
+  <div class="container">
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'main:league' league_code='PL' %}">
+         <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="..."> 
+          <div class="card-body">
+            <p class="card-text">プレミアリーグ</p>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'main:league' league_code='PD' %}">
+          <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">ラ・リーガ</p>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'main:league' league_code='SA' %}">
+          <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">セリエA</p>
+          </div>
+        </a>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <a href="{% url 'main:league' league_code='BL1' %}">
+          <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">ブンデスリーガ</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

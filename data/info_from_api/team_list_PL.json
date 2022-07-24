@@ -1,0 +1,876 @@
+{
+    "count": 20,
+    "filters": {
+        "season": "2022"
+    },
+    "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PL.png"
+    },
+    "season": {
+        "id": 1490,
+        "startDate": "2022-08-05",
+        "endDate": "2023-05-28",
+        "currentMatchday": 1,
+        "winner": null
+    },
+    "teams": [
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 57,
+            "name": "Arsenal FC",
+            "shortName": "Arsenal",
+            "tla": "ARS",
+            "crest": "https://crests.football-data.org/57.png",
+            "address": "75 Drayton Park London N5 1BU",
+            "website": "http://www.arsenal.com",
+            "founded": 1886,
+            "clubColors": "Red / White",
+            "venue": "Emirates Stadium",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:48:56Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 58,
+            "name": "Aston Villa FC",
+            "shortName": "Aston Villa",
+            "tla": "AVL",
+            "crest": "https://crests.football-data.org/58.png",
+            "address": "Villa Park Birmingham B6 6HE",
+            "website": "http://www.avfc.co.uk",
+            "founded": 1872,
+            "clubColors": "Claret / Sky Blue",
+            "venue": "Villa Park",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-04-03T16:22:14Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 61,
+            "name": "Chelsea FC",
+            "shortName": "Chelsea",
+            "tla": "CHE",
+            "crest": "https://crests.football-data.org/61.png",
+            "address": "Fulham Road London SW6 1HS",
+            "website": "http://www.chelseafc.com",
+            "founded": 1905,
+            "clubColors": "Royal Blue / White",
+            "venue": "Stamford Bridge",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:24:40Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 62,
+            "name": "Everton FC",
+            "shortName": "Everton",
+            "tla": "EVE",
+            "crest": "https://crests.football-data.org/62.png",
+            "address": "Goodison Park Liverpool L4 4EL",
+            "website": "http://www.evertonfc.com",
+            "founded": 1878,
+            "clubColors": "Blue / White",
+            "venue": "Goodison Park",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:47:42Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 63,
+            "name": "Fulham FC",
+            "shortName": "Fulham",
+            "tla": "FUL",
+            "crest": "https://crests.football-data.org/63.svg",
+            "address": "Craven Cottage, Stevenage Road London SW6 6HH",
+            "website": "http://www.fulhamfc.com",
+            "founded": 1879,
+            "clubColors": "White / Black",
+            "venue": "Craven Cottage",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2021-04-09T02:26:44Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 64,
+            "name": "Liverpool FC",
+            "shortName": "Liverpool",
+            "tla": "LIV",
+            "crest": "https://crests.football-data.org/64.png",
+            "address": "Anfield Road Liverpool L4 0TH",
+            "website": "http://www.liverpoolfc.tv",
+            "founded": 1892,
+            "clubColors": "Red / White",
+            "venue": "Anfield",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:30:22Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 65,
+            "name": "Manchester City FC",
+            "shortName": "Man City",
+            "tla": "MCI",
+            "crest": "https://crests.football-data.org/65.png",
+            "address": "SportCity Manchester M11 3FF",
+            "website": "https://www.mancity.com",
+            "founded": 1880,
+            "clubColors": "Sky Blue / White",
+            "venue": "Etihad Stadium",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:48:37Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png",
+            "address": "Sir Matt Busby Way Manchester M16 0RA",
+            "website": "http://www.manutd.com",
+            "founded": 1878,
+            "clubColors": "Red / White",
+            "venue": "Old Trafford",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:27:46Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 67,
+            "name": "Newcastle United FC",
+            "shortName": "Newcastle",
+            "tla": "NEW",
+            "crest": "https://crests.football-data.org/67.png",
+            "address": "Sports Direct Arena Newcastle upon Tyne NE1 4ST",
+            "website": "http://www.nufc.co.uk",
+            "founded": 1881,
+            "clubColors": "Black / White",
+            "venue": "St. James' Park",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:22:56Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 73,
+            "name": "Tottenham Hotspur FC",
+            "shortName": "Tottenham",
+            "tla": "TOT",
+            "crest": "https://crests.football-data.org/73.svg",
+            "address": "Bill Nicholson Way, 748 High Road London N17 0AP",
+            "website": "http://www.tottenhamhotspur.com",
+            "founded": 1882,
+            "clubColors": "Navy Blue / White",
+            "venue": "Tottenham Hotspur Stadium",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2020-11-20T07:12:32Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 76,
+            "name": "Wolverhampton Wanderers FC",
+            "shortName": "Wolverhampton",
+            "tla": "WOL",
+            "crest": "https://crests.football-data.org/76.svg",
+            "address": "Waterloo Road Wolverhampton WV1 4QR",
+            "website": "http://www.wolves.co.uk",
+            "founded": 1877,
+            "clubColors": "Black / Gold",
+            "venue": "Molineux Stadium",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2021-04-09T02:25:24Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 338,
+            "name": "Leicester City FC",
+            "shortName": "Leicester City",
+            "tla": "LEI",
+            "crest": "https://crests.football-data.org/338.png",
+            "address": "The Walkers Stadium, Filbert Way Leicester LE2 7FL",
+            "website": "http://www.lcfc.com",
+            "founded": 1884,
+            "clubColors": "Royal Blue / White",
+            "venue": "King Power Stadium",
+            "runningCompetitions": [
+                {
+                    "id": 2146,
+                    "name": "UEFA Europa League",
+                    "code": "EL",
+                    "type": "CUP",
+                    "emblem": "https://crests.football-data.org/EL.png"
+                },
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:48:23Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 340,
+            "name": "Southampton FC",
+            "shortName": "Southampton",
+            "tla": "SOU",
+            "crest": "https://crests.football-data.org/340.png",
+            "address": "Britannia Road Southampton SO14 5FP",
+            "website": "http://www.saintsfc.co.uk",
+            "founded": 1885,
+            "clubColors": "Red / White / Black",
+            "venue": "St. Mary's Stadium",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:48:04Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 341,
+            "name": "Leeds United FC",
+            "shortName": "Leeds United",
+            "tla": "LEE",
+            "crest": "https://crests.football-data.org/341.png",
+            "address": "Elland Road Leeds LS11 0ES",
+            "website": "http://www.leedsunited.com",
+            "founded": 1904,
+            "clubColors": "White / Blue",
+            "venue": "Elland Road",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:27:14Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 351,
+            "name": "Nottingham Forest FC",
+            "shortName": "Nottingham",
+            "tla": "NOT",
+            "crest": "https://crests.football-data.org/351.svg",
+            "address": "Pavilion Road, West Bridgeford Nottingham NG2 5GJ",
+            "website": "http://www.nottinghamforest.co.uk",
+            "founded": 1865,
+            "clubColors": "Red / White",
+            "venue": "The City Ground",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2020-11-26T02:16:50Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY",
+            "crest": "https://crests.football-data.org/354.png",
+            "address": "Whitehorse Lane London SE25 6PU",
+            "website": "http://www.cpfc.co.uk",
+            "founded": 1905,
+            "clubColors": "Red / Blue",
+            "venue": "Selhurst Park",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-10T19:22:36Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 397,
+            "name": "Brighton & Hove Albion FC",
+            "shortName": "Brighton Hove",
+            "tla": "BHA",
+            "crest": "https://crests.football-data.org/397.svg",
+            "address": "44 North Road Brighton & Hove BN1 1YR",
+            "website": "http://www.seagulls.co.uk",
+            "founded": 1898,
+            "clubColors": "Blue / White",
+            "venue": "The American Express Community Stadium",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2021-04-12T13:10:44Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 402,
+            "name": "Brentford FC",
+            "shortName": "Brentford",
+            "tla": "BRE",
+            "crest": "https://crests.football-data.org/402.png",
+            "address": "Braemar Road Brentford TW8 0NT",
+            "website": "http://www.brentfordfc.co.uk",
+            "founded": 1889,
+            "clubColors": "Red / White / Black",
+            "venue": "Griffin Park",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-04-03T16:24:00Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 563,
+            "name": "West Ham United FC",
+            "shortName": "West Ham",
+            "tla": "WHU",
+            "crest": "https://crests.football-data.org/563.png",
+            "address": "Queen Elizabeth Olympic Park, London London E20 2ST",
+            "website": "http://www.whufc.com",
+            "founded": 1895,
+            "clubColors": "Claret / Sky Blue",
+            "venue": "London Stadium",
+            "runningCompetitions": [
+                {
+                    "id": 2146,
+                    "name": "UEFA Europa League",
+                    "code": "EL",
+                    "type": "CUP",
+                    "emblem": "https://crests.football-data.org/EL.png"
+                },
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-19T08:09:25Z"
+        },
+        {
+            "area": {
+                "id": 2072,
+                "name": "England",
+                "code": "ENG",
+                "flag": "https://crests.football-data.org/770.svg"
+            },
+            "id": 1044,
+            "name": "AFC Bournemouth",
+            "shortName": "Bournemouth",
+            "tla": "BOU",
+            "crest": "https://crests.football-data.org/1044.png",
+            "address": "Dean Court, Kings Park Bournemouth BH7 7AF",
+            "website": "http://www.afcb.co.uk",
+            "founded": 1890,
+            "clubColors": "Red / Black",
+            "venue": "Vitality Stadium",
+            "runningCompetitions": [
+                {
+                    "id": 2021,
+                    "name": "Premier League",
+                    "code": "PL",
+                    "type": "LEAGUE",
+                    "emblem": "https://crests.football-data.org/PL.png"
+                }
+            ],
+            "coach": {
+                "id": null,
+                "firstName": null,
+                "lastName": null,
+                "name": null,
+                "dateOfBirth": null,
+                "nationality": null,
+                "contract": {
+                    "start": null,
+                    "until": null
+                }
+            },
+            "squad": [],
+            "staff": [],
+            "lastUpdated": "2022-02-22T14:05:46Z"
+        }
+    ]
+}

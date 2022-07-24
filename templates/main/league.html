@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% load localize_tags %}
 {% block title %} {{ league_code }} チーム一覧 {{ block.super }}{% endblock %}
 {% block content %}
   <h1></h1>
     {% for team in team_list %}
     <p>
-      <img src={{ team.crest }} width="50" height="50" alt="" align="center"> <a href="{% url 'main:team' league_code=league_code id=team.id  %}">{{ team.name }}</a>
+      <img src={{ team.crest }} width="50" height="50" alt="" align="center"> <a href="{% url 'main:team' league_code=league_code id=team.id  %}">{{ team.name | team_to_ja }}</a>
     </p>
     {% endfor %}
 {% endblock %}

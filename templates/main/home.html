@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load localize_tags %}
 {% block title %}ホーム画面 {{ block.super }}{% endblock %}
 {% block content %}
 <div class="container">
@@ -14,38 +15,16 @@
   <h1 class="pb-3">ホーム画面</h1>
   <div class="container">
     <div class="row">
+      {% for league in object_list %}
       <div class="card" style="width: 18rem;">
-        <a href="{% url 'main:league' league_code='PL' %}">
-         <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="..."> 
+        <a href="{% url 'main:league' league_code=league.code %}">
+         <img src="{{ league.emblem }}" class="card-img-top" alt="..."> 
           <div class="card-body">
-            <p class="card-text">プレミアリーグ</p>
+            <p class="card-text">{{ league.name | league_to_ja }}</p>
           </div>
         </a>
       </div>
-      <div class="card" style="width: 18rem;">
-        <a href="{% url 'main:league' league_code='PD' %}">
-          <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">ラ・リーガ</p>
-          </div>
-        </a>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <a href="{% url 'main:league' league_code='SA' %}">
-          <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">セリエA</p>
-          </div>
-        </a>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <a href="{% url 'main:league' league_code='BL1' %}">
-          <img src="{% comment %}ここに画像{% endcomment %}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">ブンデスリーガ</p>
-          </div>
-        </a>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>

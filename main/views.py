@@ -1,5 +1,5 @@
 from django.db.models import Q
-from django.views.generic import ListView
+from django.views.generic import ListView, TemplateView
 
 from main.models import League, Match, Team
 
@@ -35,3 +35,14 @@ class ScheduleView(ListView):
             league_code = self.kwargs.get('key')
             queryset = queryset.filter(home__league__code=league_code)
         return queryset
+
+
+class LeagueView(TemplateView):
+    template_name = 'main/league.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        league_code = self.kwargs.get('league_code')
+        context['league'] = League.objects.get(code=league_code)
+        context['teams'] = Team.objects.filter(league__code=league_code)    
+        return context

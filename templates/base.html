@@ -26,10 +26,10 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="{% url 'main:league' league_code='PL' %}" class="nav-link px-2 text-white">プレミアリーグ</a></li>
-          <li><a href="{% url 'main:league' league_code='PD' %}" class="nav-link px-2 text-white">ラ・リーガ</a></li>
-          <li><a href="{% url 'main:league' league_code='SA' %}" class="nav-link px-2 text-white">セリエA</a></li>
-          <li><a href="{% url 'main:league' league_code='BL1' %}" class="nav-link px-2 text-white">ブンデスリーガ</a></li>
+          <li><a href="{% url 'main:schedule' key='PL' %}" class="nav-link px-2 text-white">プレミアリーグ</a></li>
+          <li><a href="{% url 'main:schedule' key='PD' %}" class="nav-link px-2 text-white">ラ・リーガ</a></li>
+          <li><a href="{% url 'main:schedule' key='SA' %}" class="nav-link px-2 text-white">セリエA</a></li>
+          <li><a href="{% url 'main:schedule' key='BL1' %}" class="nav-link px-2 text-white">ブンデスリーガ</a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">

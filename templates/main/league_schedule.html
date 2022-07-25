@@ -33,8 +33,16 @@
       <tr>
         <td>{{ match.date | date:"Y年n月j日(D) H:i" }}</td>
         <td>{{ league.name | league_to_ja }}第{{ match.match_day }}節</td>
-        <td><img src={{ match.home.crest }} width="50" height="50" alt="" align="center"> {{ match.home.name | team_to_ja }}</td>
-        <td><img src={{ match.away.crest }} width="50" height="50" alt="" align="center"> {{ match.away.name | team_to_ja }}</td>
+        <td>  
+          <a href="{% url 'main:team' league_code=league.code id=match.home.id  %}" class="link-dark">
+            <img src="{{ match.home.crest }}" width="50" height="50" alt="" align="center"> {{ match.home.name | team_to_ja }}
+          </a>
+        </td>
+        <td>
+          <a href="{% url 'main:team' league_code=league.code id=match.away.id  %}" class="link-dark">
+            <img src="{{ match.away.crest }}" width="50" height="50" alt="" align="center"> {{ match.away.name | team_to_ja }}
+          </a>
+        </td>
       </tr>
       {% endfor %}
     </tbody>

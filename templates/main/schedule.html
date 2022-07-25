@@ -2,17 +2,17 @@
 {% load localize_tags %}
 {% block title %} 
 {% if league %}
-{{ league.name | league_to_ja }} チーム一覧 {{ block.super }}
+{{ league.name | league_to_ja }} 試合日程 {{ block.super }}
 {% else %}
-{{ team.name | team_to_ja }} チーム一覧 {{ block.super }}
+{{ team.name | team_to_ja }} 試合日程 {{ block.super }}
 {% endif %}
 {% endblock %}
 {% block content %}
 <div class="container">
   {% if league %}
-  <h1 class="pb-3">{{ league.name | league_to_ja }} 日程一覧</h1>
+  <h1 class="pb-3">{{ league.name | league_to_ja }} 試合日程</h1>
   {% else %}
-  <h1 class="pb-3">{{ team.name | team_to_ja }} 日程一覧</h1>
+  <h1 class="pb-3">{{ team.name | team_to_ja }} 試合日程</h1>
   {% endif %}
   <div class="pagination">
     <span class="step-links">
@@ -62,27 +62,4 @@
     </tbody>
   </table>
 </div>
-{% if team_list %}
-<div class="container px-4 py-5" id="icon-grid">
-  <h2 class="pb-2 border-bottom">チーム一覧</h2>
-  <div class="row row-cols-3">
-    {% for team in team_list %}
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-4 pt-2 pb-2 ps-2">
-          <img src="{{ team.crest }}" width="100" height="100" class="mt-1">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">{{ team.name | team_to_ja }}</h5>
-            <p class="card-text">This is a wider card with supporting text below as. </p>
-            <a href="{% url 'main:schedule' key=team.id  %}" class="stretched-link"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
 {% endblock %}

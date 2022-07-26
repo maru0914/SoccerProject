@@ -12,7 +12,8 @@
   </nav>
 </div>
 <div class="container">
-  <h1 class="pb-3">ホーム画面</h1>
+  <h2 class="pb-2 border-bottom"> ホーム画面</h2>
+  <p class="rightlink" ><a href="{% url 'main:schedule' key='all' %}"> 4大リーグ 日程</a></p>
   <div class="container">
     <div class="row">
       {% for league in object_list %}

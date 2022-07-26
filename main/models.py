@@ -57,3 +57,22 @@ class Match(models.Model):
         db_table = 'match'
         constraints = [models.UniqueConstraint(fields=['match_day', 'home', 'away', 'season'], name='unique_match')]
         ordering = ['date']
+
+
+class Standing(models.Model):
+    rank = models.PositiveIntegerField(null=True)
+    point = models.PositiveIntegerField()
+    played = models.PositiveIntegerField()
+    won = models.PositiveIntegerField()
+    draw = models.PositiveIntegerField()
+    lost = models.PositiveIntegerField()
+    goals_for = models.PositiveIntegerField()
+    goals_against = models.PositiveIntegerField()
+    goals_difference = models.IntegerField()
+    team = models.ForeignKey(Team, on_delete=models.CASCADE)
+    league = models.ForeignKey(League, on_delete=models.CASCADE)
+
+    class Meta:
+        db_table = 'standing'
+        constraints = [models.UniqueConstraint(fields=['team', 'league'], name='unique_standing')]
+        ordering = ['rank']

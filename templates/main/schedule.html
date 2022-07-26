@@ -3,16 +3,20 @@
 {% block title %} 
 {% if league %}
 {{ league.name | league_to_ja }} 試合日程 {{ block.super }}
-{% else %}
+{% elif team %}
 {{ team.name | team_to_ja }} 試合日程 {{ block.super }}
+{% else %}
+4大リーグ 試合日程 {{ block.super }}
 {% endif %}
 {% endblock %}
 {% block content %}
 <div class="container">
   {% if league %}
   <h1 class="pb-3">{{ league.name | league_to_ja }} 試合日程</h1>
-  {% else %}
+  {% elif team %}
   <h1 class="pb-3">{{ team.name | team_to_ja }} 試合日程</h1>
+  {% else %}
+  <h1 class="pb-3"> 4大リーグ 試合日程</h1>
   {% endif %}
   <div class="pagination">
     <span class="step-links">
@@ -42,12 +46,14 @@
       {% for match in object_list %}
       <tr>
         <td>{{ match.date | date:"Y年n月j日(D) H:i" }}</td>
-        {% if league %}
-        <td>{{ league.name | league_to_ja }}第{{ match.match_day }}節</td>
-        {% else %}
-        <td>{{ team.league.name | league_to_ja }}第{{ match.match_day }}節</td>
-        {% endif %}
-        <td>  
+        <td>
+          <img src="{{ match.home.league.emblem }}" width="50" height="50" alt="" align="center">
+          <a href="{% url 'main:schedule' key=match.home.league.code  %}" class="link-dark">
+            {{ match.home.league.name | league_to_ja }}
+          </a>
+          第{{ match.match_day }}節
+        </td>
+        <td>
           <a href="{% url 'main:schedule' key=match.home.id  %}" class="link-dark">
             <img src="{{ match.home.crest }}" width="50" height="50" alt="" align="center"> {{ match.home.name | team_to_ja }}
           </a>

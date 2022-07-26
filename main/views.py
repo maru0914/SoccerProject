@@ -1,7 +1,7 @@
 from django.db.models import Q
 from django.views.generic import ListView, TemplateView
 
-from main.models import League, Match, Team
+from main.models import League, Match, Standing, Team
 
 
 class HomeView(ListView):
@@ -51,3 +51,20 @@ class LeagueView(TemplateView):
         context['league'] = League.objects.get(code=league_code)
         context['teams'] = Team.objects.filter(league__code=league_code)    
         return context
+
+
+class StandingView(ListView):
+    model = Standing
+    template_name = 'main/standing.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        league_code = self.kwargs.get('league_code')
+        context['league'] = League.objects.get(code=league_code)
+        return context
+
+    def get_queryset(self, **kwargs):
+        queryset = super().get_queryset(**kwargs)
+        league_code = self.kwargs.get('league_code')
+        queryset = queryset.filter(league__code=league_code)
+        return queryset

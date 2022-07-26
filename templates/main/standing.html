@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load localize_tags %}
+{% block title %} 
+{{ league.name | league_to_ja }} 順位表 {{ block.super }}
+{% endblock %}
+{% block content %}
+<div class="container">
+  <h1 class="pb-3">{{ league.name | league_to_ja }} 順位表</h1>
+  <table class="table table-hover table align-middle">
+    <thead>
+      <tr>
+        <th>順位</th>
+        <th>チーム名</th>
+        <th>勝点</th>
+        <th>試合</th>
+        <th>勝</th>
+        <th>分</th>
+        <th>負</th>
+        <th>得点</th>
+        <th>失点</th>
+        <th>得失点</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for standing in object_list %}
+      <tr>
+        <td>{{ standing.rank }}</td>
+        <td>
+          <img src="{{ standing.team.crest }}" width="20" height="20" alt="" align="center"> {{ standing.team.name | team_to_ja }}
+        </td>
+        <td>{{ standing.point }}</td>
+        <td>{{ standing.played }}</td>
+        <td>{{ standing.won }}</td>
+        <td>{{ standing.draw }}</td>
+        <td>{{ standing.lost }}</td>
+        <td>{{ standing.goals_for }}</td>
+        <td>{{ standing.goals_against }}</td>
+        <td>{{ standing.goals_difference }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

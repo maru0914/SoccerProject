@@ -6,7 +6,7 @@
 {% block content %}
 <div class="container px-4 py-5" id="icon-grid">
   <h2 class="pb-2 border-bottom">{{ league.name | league_to_ja }} 所属チーム</h2>
-  <p class="rightlink" ><a href="{% url 'main:schedule' key=league.code %}"> {{ league.name | league_to_ja }} 日程</a></p>
+  <p class="rightlink" ><a href="{% url 'main:standing' league_code=league.code %}"> 順位表</a>  <a href="{% url 'main:schedule' key=league.code %}"> 日程</a></p>
   <div class="row row-cols-3">
     {% for team in teams %}
     <div class="card mb-3">

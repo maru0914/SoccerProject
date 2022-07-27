@@ -4,26 +4,30 @@
 {{ league.name | league_to_ja }} | {{ block.super }}
 {% endblock %}
 {% block content %}
-<div class="container px-4 py-5" id="icon-grid">
-  <h2 class="pb-2 border-bottom">{{ league.name | league_to_ja }} 所属チーム</h2>
-  <p class="rightlink" ><a href="{% url 'main:standing' league_code=league.code %}"> 順位表</a>  <a href="{% url 'main:schedule' key=league.code %}"> 日程</a></p>
-  <div class="row row-cols-3">
-    {% for team in teams %}
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-4 pt-2 pb-2 ps-2">
-          <img src="{{ team.crest }}" width="100" height="100" class="mt-1">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">{{ team.name | team_to_ja }}</h5>
-            <p class="card-text"></p>
-            <a href="{% url 'main:schedule' key=team.id %}" class="stretched-link"></a>
+<section class="team_list">
+  <div class="container " id="icon-grid">
+    <div class="content">
+      <h1 class="pb-2 border-bottom">{{ league.name | league_to_ja }} 所属チーム</h1>
+      <p class="rightlink" ><a href="{% url 'main:standing' league_code=league.code %}"> 順位表</a>  <a href="{% url 'main:schedule' key=league.code %}"> 日程</a></p>
+      <div class="row row-cols-3">
+        {% for team in teams %}
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4 pt-2 pb-2 ps-2">
+              <img src="{{ team.crest }}" width="100" height="100" class="mt-1">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{ team.name | team_to_ja }}</h5>
+                <p class="card-text"></p>
+                <a href="{% url 'main:schedule' key=team.id %}" class="stretched-link"></a>
+              </div>
+            </div>
           </div>
         </div>
+        {% endfor %}
       </div>
     </div>
-    {% endfor %}
   </div>
-</div>
+</section>
 {% endblock %}

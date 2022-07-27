@@ -1,8 +1,24 @@
 /*---------------------------------
+　LEAGUE_TOP
+---------------------------------*/
+.league_top .container{
+    display: flex;
+    justify-content: space-between;
+    max-width:1100px;
+    margin:0px opx;
+    padding:20px 0px;
+}
+
+.league_top img{
+    width: 20px;
+    height: 20px;
+}
+
+/*---------------------------------
 　SCHEDULE
 ---------------------------------*/
 .schedule .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:0px auto;
     padding:20px 0px;
 }
@@ -11,7 +27,7 @@
 　STANDING
 ---------------------------------*/
 .standing .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:0px auto;
     padding:20px 0px;
 }
@@ -20,7 +36,7 @@
 　TEAM_LIST
 ---------------------------------*/
 .team_list .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:0px auto;
     padding:20px 0px;
 }
@@ -29,7 +45,7 @@
 　TOP
 ---------------------------------*/
 .top .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:0px auto;
     padding:20px 0px;
 }

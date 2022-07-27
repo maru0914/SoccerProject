@@ -4,6 +4,12 @@
 {{ league.name | league_to_ja }} | {{ block.super }}
 {% endblock %}
 {% block content %}
+<section class="league_top">
+  <div class="container">
+    {% include "base_standing.html" %}
+    {% include "base_schedule.html" %}
+  </div>
+</section>
 <section class="team_list">
   <div class="container " id="icon-grid">
     <div class="content">

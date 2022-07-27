@@ -9,7 +9,21 @@ class HomeView(ListView):
     template_name = "main/home.html"
 
 
+class LeagueView(TemplateView):
+    template_name = 'main/league.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        league_code = self.kwargs.get('league_code')
+        context['league'] = League.objects.get(code=league_code)
+        context['matches'] = Match.objects.filter(home__league__code=league_code)[:10]
+        context['standings'] = Standing.objects.filter(league__code=league_code)[:10]
+        context['teams'] = Team.objects.filter(league__code=league_code)    
+        return context
+
+
 class ScheduleView(ListView):
+    context_object_name = 'matches'
     model = Match
     paginate_by = 10
     template_name = "main/schedule.html"
@@ -42,18 +56,8 @@ class ScheduleView(ListView):
         return queryset
 
 
-class LeagueView(TemplateView):
-    template_name = 'main/league.html'
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        league_code = self.kwargs.get('league_code')
-        context['league'] = League.objects.get(code=league_code)
-        context['teams'] = Team.objects.filter(league__code=league_code)    
-        return context
-
-
 class StandingView(ListView):
+    context_object_name = 'standings'
     model = Standing
     template_name = 'main/standing.html'
 

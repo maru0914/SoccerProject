@@ -2,7 +2,7 @@
 {% load localize_tags %}
 {% block title %}ホーム画面 {{ block.super }}{% endblock %}
 {% block content %}
-<div class="container">
+{% comment %} <div class="container">
   <nav
     style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
     aria-label="breadcrumb">
@@ -10,23 +10,27 @@
       <li class="breadcrumb-item"><a href="{% url 'main:home' %}">Home</a></li>
     </ol>
   </nav>
-</div>
-<div class="container">
-  <h2 class="pb-2 border-bottom"> ホーム画面</h2>
-  <p class="rightlink" ><a href="{% url 'main:schedule' key='all' %}"> 4大リーグ 日程</a></p>
+</div> {% endcomment %}
+<section class="top">
   <div class="container">
-    <div class="row">
-      {% for league in object_list %}
-      <div class="card" style="width: 18rem;">
-        <a href="{% url 'main:league' league_code=league.code %}">
-         <img src="{{ league.emblem }}" class="card-img-top" alt="..."> 
-          <div class="card-body">
-            <p class="card-text">{{ league.name | league_to_ja }}</p>
+    <div class="content">
+      <h1 class="pb-2 border-bottom"> ホーム画面</h1>
+      <p class="rightlink" ><a href="{% url 'main:schedule' key='all' %}"> 4大リーグ 日程</a></p>
+      <div class="container">
+        <div class="row">
+          {% for league in object_list %}
+          <div class="card" style="width: 18rem;">
+            <a href="{% url 'main:league' league_code=league.code %}">
+            <img src="{{ league.emblem }}" class="card-img-top" alt="..."> 
+              <div class="card-body">
+                <p class="card-text">{{ league.name | league_to_ja }}</p>
+              </div>
+            </a>
           </div>
-        </a>
+          {% endfor %}
+        </div>
       </div>
-      {% endfor %}
     </div>
   </div>
-</div>
+</section>
 {% endblock %}

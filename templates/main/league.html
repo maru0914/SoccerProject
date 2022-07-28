@@ -6,15 +6,24 @@
 {% block content %}
 <section class="league_top">
   <div class="container">
-    {% include "base_standing.html" %}
-    {% include "base_schedule.html" %}
+    <div class="content_standing">
+      {% include "base_standing.html" %}
+      <div class="right_link">
+        <a href="{% url 'main:standing' league_code=league.code %}">詳細</a>
+      </div>
+    </div>
+    <div class="content_schedule">
+      {% include "base_schedule.html" %}
+      <div class="right_link">
+        <a href="{% url 'main:schedule' key=league.code %}">詳細</a>
+      </div>
+    </div>
   </div>
 </section>
 <section class="team_list">
   <div class="container " id="icon-grid">
     <div class="content">
       <h1 class="pb-2 border-bottom">{{ league.name | league_to_ja }} 所属チーム</h1>
-      <p class="rightlink" ><a href="{% url 'main:standing' league_code=league.code %}"> 順位表</a>  <a href="{% url 'main:schedule' key=league.code %}"> 日程</a></p>
       <div class="row row-cols-3">
         {% for team in teams %}
         <div class="card mb-3">

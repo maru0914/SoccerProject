@@ -36,12 +36,18 @@
   <tbody>
     {% for match in matches %}
     <tr>
+      {% if page_obj.has_previous or page_obj.has_next %}
       <td>{{ match.date | date:"Y年n月j日(D) H:i" }}</td>
+      {% else %}
+      <td>{{ match.date | date:"n/j(D) H:i" }}</td>
+      {% endif %}
       <td>
+        {% if page_obj.has_previous or page_obj.has_next %}
         <img src="{{ match.home.league.emblem }}" width="50" height="50" alt="" align="center">
         <a href="{% url 'main:schedule' key=match.home.league.code  %}" class="link-dark">
           {{ match.home.league.name | league_to_ja }}
         </a>
+        {% endif %}
         第{{ match.match_day }}節
       </td>
       <td>

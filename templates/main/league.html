@@ -6,16 +6,18 @@
 {% block content %}
 <section class="league_top">
   <div class="container">
-    <div class="content_standing">
-      {% include "base_standing.html" %}
-      <div class="right_link">
-        <a href="{% url 'main:standing' league_code=league.code %}">詳細</a>
+    <div class="row">
+      <div class="col-md-6">
+        {% include "base_standing.html" %}
+        <div class="right_link">
+          <a href="{% url 'main:standing' league_code=league.code %}">詳細</a>
+        </div>
       </div>
-    </div>
-    <div class="content_schedule">
-      {% include "base_schedule.html" %}
-      <div class="right_link">
-        <a href="{% url 'main:schedule' key=league.code %}">詳細</a>
+      <div class="col-md-6">
+        {% include "base_schedule.html" %}
+        <div class="right_link">
+          <a href="{% url 'main:schedule' key=league.code %}">詳細</a>
+        </div>
       </div>
     </div>
   </div>

@@ -1,6 +1,11 @@
 /*---------------------------------
 　LEAGUE_TOP
 ---------------------------------*/
+.league_top img{
+    width: 20px;
+    height: 20px;
+}
+
 .league_top .container{
     display: flex;
     justify-content: space-between;
@@ -9,9 +14,8 @@
     padding:20px 0px;
 }
 
-.league_top img{
-    width: 20px;
-    height: 20px;
+.league_top .right_link{
+    text-align: right;
 }
 
 /*---------------------------------
@@ -60,7 +64,3 @@ h1{
 }
 
 
-p.rightlink {
-    margin: -2.25em 0 10px;
-    text-align: right;
-}

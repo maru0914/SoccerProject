@@ -1,22 +1,20 @@
 {% load localize_tags %}
-
-<div class="content_standing">
-	<h1 class="pb-2 border-bottom">{{ league.name | league_to_ja }} 順位表</h1>
+  <h1 class="pb-2 border-bottom">{{ league.name | league_to_ja }} 順位表</h1>
 	<table class="table table-hover">
-		<thead>
-			<tr>
-				<th>順位</th>
-				<th>チーム名</th>
-				<th>勝点</th>
-				<th>試合</th>
-				<th>勝</th>
-				<th>分</th>
-				<th>負</th>
-				{% if standings|length > 10 %}
-				<th>得点</th>
-				<th>失点</th>
-				<th>得失点</th>
-				{% endif %}
+	  <thead>
+	    <tr>
+			<th>順位</th>
+			<th>チーム名</th>
+			<th>勝点</th>
+			<th>試合</th>
+			<th>勝</th>
+			<th>分</th>
+			<th>負</th>
+			{% if standings|length > 10 %}
+			<th>得点</th>
+			<th>失点</th>
+			<th>得失点</th>
+			{% endif %}
 			</tr>
 		</thead>
 		<tbody>
@@ -40,4 +38,3 @@
 			{% endfor %}
 		</tbody>
 	</table>
-</div>

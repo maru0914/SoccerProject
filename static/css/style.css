@@ -6,7 +6,12 @@
     height: 20px;
 }
 
-.league_top .right_link{
+p.right_link_two_lines {
+    margin: -3.5em 0 10px;
+    text-align: right;
+}
+
+.right_link {
     text-align: right;
 }
 

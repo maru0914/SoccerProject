@@ -1,5 +1,14 @@
 {% load localize_tags %}
   <h1 class="pb-2 border-bottom">{{ league.name | league_to_ja }} 順位表</h1>
+  {% if standings|length > 10 %}
+    {% if league.code == 'PD' or league.code == 'SA' %}
+    <p class="right_link_two_lines">1～4位:CL、5位:EL、6位:ECL  出場権獲得<br>  18~20位:降格</p>
+    {% elif league.code == 'PL' %}
+    <p class="right_link_two_lines">1～4位:CL、5位:EL  出場権獲得<br>  18~20位:降格</p>
+    {% elif league.code == 'BL1' %}
+    <p class="right_link_two_lines">1～4位:CL、5位:EL、6位:ECL  出場権獲得<br>  16~18位:降格</p>
+    {% endif %}
+	{% endif %}
 	<table class="table table-hover">
 	  <thead>
 	    <tr>
@@ -19,8 +28,43 @@
 		</thead>
 		<tbody>
 			{% for standing in standings %}
+			{% if standing.rank == 1 or standing.rank == 2 or standing.rank == 3 or standing.rank == 4 %}
+			<tr class="table-info">
+				<td>{{ standing.rank }}</td>
+			{% elif standing.rank == 5 %}
+			<tr class="table-success">
+				<td>{{ standing.rank }}</td>
+			{% elif standing.rank == 6 %}
+			  {% if league.code != 'PL' %}
+				<tr class="table-warning">
+					<td>{{ standing.rank }}</td>
+			  {% else %}
+				<tr>
+					<td>{{ standing.rank }}</td>
+			  {% endif %}
+			{% elif standing.rank == 18 or standing.rank == 19 or standing.rank == 20 %}
+			  {% if league.code != 'BL1' %}
+				<tr class="table-danger">
+					<td>{{ standing.rank }}</td>
+			  {% elif standing.rank == 18 %}
+				<tr class="table-danger">
+					<td>{{ standing.rank }}</td>
+			  {% else %}
+				<tr>
+					<td>{{ standing.rank }}</td>
+			  {% endif %}
+			{% elif standing.rank == 16 or standing.rank == 17 or standing.rank == 18 %}
+			  {% if league.code == 'BL1' %}
+				<tr  class="table-danger">
+					<td>{{ standing.rank }}</td>
+			  {% else %}
+				<tr>
+					<td>{{ standing.rank }}</td>
+			  {% endif %}
+			{% else %}
 			<tr>
 				<td>{{ standing.rank }}</td>
+			{% endif %}
 				<td>
 				<img src="{{ standing.team.crest }}" width="20" height="20" alt="" align="center"> {{ standing.team.name | team_to_ja }}
 				</td>

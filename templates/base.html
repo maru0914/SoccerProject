@@ -36,12 +36,17 @@
 
         {% comment %} <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
           <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        </form>
+        </form> {% endcomment %}
 
         <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
-        </div> {% endcomment %}
+          {% if user.is_authenticated %}
+          {{ user.username }}
+          <a href="{% url 'accounts:logout' %}" class="btn btn-outline-light me-2">ログアウト</a>
+          {% else %}
+          <a href="{% url 'accounts:login' %}" class="btn btn-outline-light me-2">ログイン</a>
+          <a href="{% url 'accounts:signup' %}" class="btn btn-warning" >アカウント登録</a>
+          {% endif %}
+        </div> 
       </div>
     </div>
   </header>

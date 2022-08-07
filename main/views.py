@@ -5,9 +5,16 @@ from main.models import League, Match, Standing, Team
 
 
 class HomeView(ListView):
-    model = League
+    model = Team
     template_name = "main/home.html"
+    context_object_name = 'suggest_teams'
 
+    def get_queryset(self, **kwargs):
+        queryset = super().get_queryset(**kwargs)
+        # set API's Team Name
+        suggest_team_names = ['Liverpool FC', 'Manchester City FC', 'FC Barcelona', 'Real Madrid CF', 'AC Milan', 'FC Internazionale Milano', 'FC Bayern M\u00fcnchen', 'Borussia Dortmund']
+        queryset = queryset.filter(Q(name=suggest_team_names[0]) | Q(name=suggest_team_names[1]) | Q(name=suggest_team_names[2]) | Q(name=suggest_team_names[3]) | Q(name=suggest_team_names[4]) | Q(name=suggest_team_names[5]) | Q(name=suggest_team_names[6]) | Q(name=suggest_team_names[7]))
+        return queryset
 
 class LeagueView(TemplateView):
     template_name = 'main/league.html'
@@ -72,3 +79,11 @@ class StandingView(ListView):
         league_code = self.kwargs.get('league_code')
         queryset = queryset.filter(league__code=league_code)
         return queryset
+
+
+class MypageView(TemplateView):
+    template_name = 'main/mypage.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context

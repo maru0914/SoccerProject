@@ -14,52 +14,52 @@ body {
     padding: 30px;
     transition: all .7s;
   }
-  
-  .dropdown-menu {
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
-  }
-  .menu-item {
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #eee;
-    transition: color .5s
-  }
-  
-  .menu-item:hover {
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
-    color: #70aed2
-  }
-  
-  .nav-active {
-    color: #70aed2;
-  }
-  
-  .line1, .line2, .line3 {
-    width: 23px;
-    height: 3px;
-    margin: 5px;
-    transition: all .4s;
-  }
-  
-  .change .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  
-  .change .line2 {
-    opacity: 0;
-  }
-  
-  .change .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-  
-  .custom-navbar {
-    padding: 5px 30px;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
-  }
-  
-  /* end of navbar */
-  
+
+.dropdown-menu {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+}
+.menu-item {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color .5s
+}
+
+.menu-item:hover {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  color: #70aed2
+}
+
+.nav-active {
+  color: #70aed2;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+
+/* end of navbar */
+
 
 
 /* header */
@@ -159,3 +159,43 @@ body {
 }
 
 /* end of standing */
+
+/* schedule */
+.schedule {
+  padding-top: 120px;
+  background: #151f20;
+  background-clip: padding-box;
+}
+
+.schedule-link {
+  color: #eee;
+  transition: color .5s;
+}
+
+.schedule-link:hover {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  color: #70aed2;
+}
+
+.schedule-logo {
+  background-color: rgb(218 218 218);
+}
+
+.page-link {
+  color: antiquewhite;
+  background-color: #27282c;
+  border-color: #535659;
+}
+
+.page-link:hover {
+  color: antiquewhite;
+  background-color: #393d40;
+}
+
+.page-item.active .page-link {
+    color: white;
+    background-color: #402e37;
+    border-color: #535659;
+}
+
+/* end of schedule */

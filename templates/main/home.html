@@ -2,6 +2,26 @@
 {% load localize_tags %}
 {% block title %}ホーム - {{ block.super }}{% endblock %}
 {% block content %}
+  <!-- message -->
+    {% if messages %}
+    {% for message in messages %}
+    <section class="message">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              {{ message }}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+    {% endif %}
+  <!-- end of message -->
+
   <!-- header -->
   <header class="d-flex align-items-center">
   <!-- banner -->

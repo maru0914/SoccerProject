@@ -32,7 +32,7 @@ class LeagueView(TemplateView):
 class ScheduleView(ListView):
     context_object_name = 'matches'
     model = Match
-    paginate_by = 10
+    paginate_by = 20
     template_name = "main/schedule.html"
 
     def get_context_data(self, **kwargs):

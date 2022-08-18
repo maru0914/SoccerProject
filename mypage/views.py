@@ -1,3 +1,15 @@
-from django.shortcuts import render
+"""Views for mypage app.
+It's implemented by Class Based View.
+"""
+from django.views.generic import TemplateView
 
-# Create your views here.
+
+class DashboardView(TemplateView):
+    """
+    Display an dashboard for specific user.
+
+    **Template:**
+
+    :template:'mypage/dashboard.html'
+    """
+    template_name = 'mypage/dashboard.html'

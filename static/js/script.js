@@ -24,4 +24,5 @@ $(document).ready(function() {
             $('.gallery').removeClass('change');
         }
       });
+      $('[data-toggle="tooltip"]').tooltip();
 });

@@ -41,7 +41,7 @@
         </li>
        {% if user.is_authenticated %}
         <li class="nav-item">
-          <a href="#" class="nav-link m-2 menu-item">マイページ</a>
+          <a href="{% url 'mypage:dashboard' %}" class="nav-link m-2 menu-item">マイページ</a>
         </li>
         <li class="nav-item">
           <a href="{% url 'accounts:logout' %}" class="nav-link m-2 menu-item">ログアウト</a>

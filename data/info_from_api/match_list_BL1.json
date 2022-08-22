@@ -6,7 +6,7 @@
         "count": 306,
         "first": "2022-08-05",
         "last": "2023-05-27",
-        "played": 0
+        "played": 27
     },
     "competition": {
         "id": 2002,
@@ -34,16 +34,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416393,
-            "utcDate": "2022-08-05T18:30:00Z",
-            "status": "TIMED",
+            "utcDate": "2022-08-05T18:35:00Z",
+            "status": "FINISHED",
             "matchday": 1,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-06-17T12:08:24Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 19,
                 "name": "Eintracht Frankfurt",
@@ -59,21 +59,28 @@
                 "crest": "https://crests.football-data.org/5.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 6
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 5
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 8825,
+                    "name": "Deniz Aytekin",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -93,16 +100,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416386,
             "utcDate": "2022-08-06T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 1,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 16,
                 "name": "FC Augsburg",
@@ -118,21 +125,28 @@
                 "crest": "https://crests.football-data.org/17.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 4
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 15746,
+                    "name": "Bastian Dankert",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -152,16 +166,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416387,
             "utcDate": "2022-08-06T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 1,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 36,
                 "name": "VfL Bochum 1848",
@@ -177,21 +191,28 @@
                 "crest": "https://crests.football-data.org/15.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 2
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 43878,
+                    "name": "Felix Zwayer",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -211,16 +232,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416388,
             "utcDate": "2022-08-06T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 1,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 11,
                 "name": "VfL Wolfsburg",
@@ -236,21 +257,28 @@
                 "crest": "https://crests.football-data.org/12.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "DRAW",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 2
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 2
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 9567,
+                    "name": "Sascha Stegemann",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -270,16 +298,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416389,
             "utcDate": "2022-08-06T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 1,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 18,
                 "name": "Borussia M\u00f6nchengladbach",
@@ -295,21 +323,28 @@
                 "crest": "https://crests.football-data.org/2.png"
             },
             "score": {
-                "winner": null,
+                "winner": "HOME_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 3,
+                    "away": 1
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 15408,
+                    "name": "Daniel Siebert",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -329,16 +364,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416391,
             "utcDate": "2022-08-06T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 1,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 28,
                 "name": "1. FC Union Berlin",
@@ -354,21 +389,28 @@
                 "crest": "https://crests.football-data.org/9.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "HOME_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 3,
+                    "away": 1
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 15821,
+                    "name": "Marco Fritz",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -388,16 +430,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416392,
             "utcDate": "2022-08-06T16:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 1,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 4,
                 "name": "Borussia Dortmund",
@@ -413,21 +455,28 @@
                 "crest": "https://crests.football-data.org/3.png"
             },
             "score": {
-                "winner": null,
+                "winner": "HOME_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 43875,
+                    "name": "Felix Brych",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -447,16 +496,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416385,
             "utcDate": "2022-08-07T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 1,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 10,
                 "name": "VfB Stuttgart",
@@ -472,21 +521,28 @@
                 "crest": "https://crests.football-data.org/721.png"
             },
             "score": {
-                "winner": null,
+                "winner": "DRAW",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 43943,
+                    "name": "Tobias Stieler",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -506,16 +562,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416390,
             "utcDate": "2022-08-07T15:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 1,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 1,
                 "name": "1. FC K\u00f6ln",
@@ -531,21 +587,28 @@
                 "crest": "https://crests.football-data.org/6.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "HOME_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 3,
+                    "away": 1
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 57519,
+                    "name": "Robert Schr\u00f6der",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -565,16 +628,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416687,
             "utcDate": "2022-08-12T18:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 2,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 17,
                 "name": "SC Freiburg",
@@ -590,21 +653,28 @@
                 "crest": "https://crests.football-data.org/4.png"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 3
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 57539,
+                    "name": "Tobias Welz",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -624,16 +694,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416682,
             "utcDate": "2022-08-13T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 2,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 12,
                 "name": "SV Werder Bremen",
@@ -649,21 +719,28 @@
                 "crest": "https://crests.football-data.org/10.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "DRAW",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 2
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 57504,
+                    "name": "Robert Hartmann",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -683,16 +760,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416684,
             "utcDate": "2022-08-13T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 2,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 9,
                 "name": "Hertha BSC",
@@ -708,21 +785,28 @@
                 "crest": "https://crests.football-data.org/19.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "DRAW",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 57532,
+                    "name": "Frank Willenborg",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -742,16 +826,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416685,
             "utcDate": "2022-08-13T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 2,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 2,
                 "name": "TSG 1899 Hoffenheim",
@@ -767,21 +851,28 @@
                 "crest": "https://crests.football-data.org/36.png"
             },
             "score": {
-                "winner": null,
+                "winner": "HOME_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 3,
+                    "away": 2
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 2
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 337,
+                    "name": "Patrick Ittrich",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -801,16 +892,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416688,
             "utcDate": "2022-08-13T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 2,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 721,
                 "name": "RB Leipzig",
@@ -826,21 +917,28 @@
                 "crest": "https://crests.football-data.org/1.png"
             },
             "score": {
-                "winner": null,
+                "winner": "DRAW",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 2
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 43922,
+                    "name": "Benjamin Brand",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -860,16 +958,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416689,
             "utcDate": "2022-08-13T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 2,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 3,
                 "name": "Bayer 04 Leverkusen",
@@ -885,21 +983,28 @@
                 "crest": "https://crests.football-data.org/16.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 2
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 57516,
+                    "name": "Benjamin Cortus",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -919,16 +1024,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416683,
             "utcDate": "2022-08-13T16:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 2,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 6,
                 "name": "FC Schalke 04",
@@ -944,21 +1049,28 @@
                 "crest": "https://crests.football-data.org/18.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "DRAW",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 2
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 15824,
+                    "name": "Sven Jablonski",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -978,16 +1090,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416686,
             "utcDate": "2022-08-14T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 2,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 15,
                 "name": "1. FSV Mainz 05",
@@ -1003,21 +1115,28 @@
                 "crest": "https://crests.football-data.org/28.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "DRAW",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 57517,
+                    "name": "Daniel Schlager",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1037,16 +1156,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416690,
             "utcDate": "2022-08-14T15:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 2,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 5,
                 "name": "FC Bayern M\u00fcnchen",
@@ -1062,21 +1181,28 @@
                 "crest": "https://crests.football-data.org/11.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "HOME_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 0
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 253,
+                    "name": "Harm Osmers",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1096,16 +1222,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416678,
             "utcDate": "2022-08-19T18:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 3,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 18,
                 "name": "Borussia M\u00f6nchengladbach",
@@ -1121,21 +1247,28 @@
                 "crest": "https://crests.football-data.org/9.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "HOME_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 56230,
+                    "name": "Matthias J\u00f6llenbeck",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1155,16 +1288,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416673,
             "utcDate": "2022-08-20T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 3,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 10,
                 "name": "VfB Stuttgart",
@@ -1180,21 +1313,28 @@
                 "crest": "https://crests.football-data.org/17.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 1
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 1
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 43875,
+                    "name": "Felix Brych",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1214,16 +1354,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416674,
             "utcDate": "2022-08-20T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 3,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 16,
                 "name": "FC Augsburg",
@@ -1239,21 +1379,28 @@
                 "crest": "https://crests.football-data.org/15.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 2
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 9567,
+                    "name": "Sascha Stegemann",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1273,16 +1420,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416676,
             "utcDate": "2022-08-20T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 3,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 11,
                 "name": "VfL Wolfsburg",
@@ -1298,21 +1445,28 @@
                 "crest": "https://crests.football-data.org/6.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "DRAW",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 43878,
+                    "name": "Felix Zwayer",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1332,16 +1486,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416680,
             "utcDate": "2022-08-20T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 3,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 3,
                 "name": "Bayer 04 Leverkusen",
@@ -1357,21 +1511,28 @@
                 "crest": "https://crests.football-data.org/2.png"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 3
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 2
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 57512,
+                    "name": "Tobias Reichel",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1391,16 +1552,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416681,
             "utcDate": "2022-08-20T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 3,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 4,
                 "name": "Borussia Dortmund",
@@ -1416,21 +1577,28 @@
                 "crest": "https://crests.football-data.org/12.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 3
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 57518,
+                    "name": "Florian Badst\u00fcbner",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1450,16 +1618,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416679,
             "utcDate": "2022-08-20T16:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 3,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T08:20:07Z",
             "homeTeam": {
                 "id": 28,
                 "name": "1. FC Union Berlin",
@@ -1475,21 +1643,28 @@
                 "crest": "https://crests.football-data.org/721.png"
             },
             "score": {
-                "winner": null,
+                "winner": "HOME_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 1
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 8825,
+                    "name": "Deniz Aytekin",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1509,16 +1684,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416677,
             "utcDate": "2022-08-21T13:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 3,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-22T03:48:08Z",
             "homeTeam": {
                 "id": 19,
                 "name": "Eintracht Frankfurt",
@@ -1534,21 +1709,28 @@
                 "crest": "https://crests.football-data.org/1.png"
             },
             "score": {
-                "winner": null,
+                "winner": "DRAW",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 15825,
+                    "name": "Martin Petersen",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1568,16 +1750,16 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416675,
             "utcDate": "2022-08-21T15:30:00Z",
-            "status": "TIMED",
+            "status": "FINISHED",
             "matchday": 3,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-22T03:48:08Z",
             "homeTeam": {
                 "id": 36,
                 "name": "VfL Bochum 1848",
@@ -1593,21 +1775,28 @@
                 "crest": "https://crests.football-data.org/5.svg"
             },
             "score": {
-                "winner": null,
+                "winner": "AWAY_TEAM",
                 "duration": "REGULAR",
                 "fullTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 7
                 },
                 "halfTime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 4
                 }
             },
             "odds": {
                 "msg": "Activate Odds-Package in User-Panel to retrieve odds."
             },
-            "referees": []
+            "referees": [
+                {
+                    "id": 15408,
+                    "name": "Daniel Siebert",
+                    "type": "REFEREE",
+                    "nationality": "Germany"
+                }
+            ]
         },
         {
             "area": {
@@ -1627,7 +1816,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416670,
@@ -1636,7 +1825,7 @@
             "matchday": 4,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-22T01:32:01Z",
             "homeTeam": {
                 "id": 17,
                 "name": "SC Freiburg",
@@ -1686,7 +1875,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416665,
@@ -1695,7 +1884,7 @@
             "matchday": 4,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-22T01:32:01Z",
             "homeTeam": {
                 "id": 6,
                 "name": "FC Schalke 04",
@@ -1745,7 +1934,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416666,
@@ -1754,7 +1943,7 @@
             "matchday": 4,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-22T01:32:01Z",
             "homeTeam": {
                 "id": 9,
                 "name": "Hertha BSC",
@@ -1804,7 +1993,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416667,
@@ -1813,7 +2002,7 @@
             "matchday": 4,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T01:32:02Z",
             "homeTeam": {
                 "id": 2,
                 "name": "TSG 1899 Hoffenheim",
@@ -1863,7 +2052,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416668,
@@ -1872,7 +2061,7 @@
             "matchday": 4,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-22T01:32:01Z",
             "homeTeam": {
                 "id": 15,
                 "name": "1. FSV Mainz 05",
@@ -1922,7 +2111,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416671,
@@ -1931,7 +2120,7 @@
             "matchday": 4,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-21T01:32:02Z",
             "homeTeam": {
                 "id": 721,
                 "name": "RB Leipzig",
@@ -1981,7 +2170,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416672,
@@ -1990,7 +2179,7 @@
             "matchday": 4,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-22T01:32:02Z",
             "homeTeam": {
                 "id": 5,
                 "name": "FC Bayern M\u00fcnchen",
@@ -2040,7 +2229,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416669,
@@ -2049,7 +2238,7 @@
             "matchday": 4,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:03Z",
+            "lastUpdated": "2022-08-22T01:32:03Z",
             "homeTeam": {
                 "id": 1,
                 "name": "1. FC K\u00f6ln",
@@ -2099,7 +2288,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416664,
@@ -2108,7 +2297,7 @@
             "matchday": 4,
             "stage": "REGULAR_SEASON",
             "group": null,
-            "lastUpdated": "2022-07-04T08:20:02Z",
+            "lastUpdated": "2022-08-22T01:32:03Z",
             "homeTeam": {
                 "id": 12,
                 "name": "SV Werder Bremen",
@@ -2158,7 +2347,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416663,
@@ -2217,7 +2406,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416655,
@@ -2276,7 +2465,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416657,
@@ -2335,7 +2524,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416658,
@@ -2394,7 +2583,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416661,
@@ -2453,7 +2642,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416662,
@@ -2512,7 +2701,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416659,
@@ -2571,7 +2760,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416656,
@@ -2630,7 +2819,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416660,
@@ -2689,7 +2878,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416646,
@@ -2748,7 +2937,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416648,
@@ -2807,7 +2996,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416649,
@@ -2866,7 +3055,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416650,
@@ -2925,7 +3114,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416653,
@@ -2984,7 +3173,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416654,
@@ -3043,7 +3232,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416647,
@@ -3102,7 +3291,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416651,
@@ -3161,7 +3350,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416652,
@@ -3220,7 +3409,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416642,
@@ -3279,7 +3468,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416637,
@@ -3338,7 +3527,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416638,
@@ -3397,7 +3586,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416644,
@@ -3456,7 +3645,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416645,
@@ -3515,7 +3704,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416640,
@@ -3574,7 +3763,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416643,
@@ -3633,7 +3822,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416639,
@@ -3692,7 +3881,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416641,
@@ -3751,7 +3940,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416628,
@@ -3810,7 +3999,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416629,
@@ -3869,7 +4058,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416630,
@@ -3928,7 +4117,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416631,
@@ -3987,7 +4176,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416632,
@@ -4046,7 +4235,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416633,
@@ -4105,7 +4294,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416634,
@@ -4164,7 +4353,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416635,
@@ -4223,7 +4412,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416636,
@@ -4282,7 +4471,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416619,
@@ -4341,7 +4530,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416620,
@@ -4400,7 +4589,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416621,
@@ -4459,7 +4648,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416622,
@@ -4518,7 +4707,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416623,
@@ -4577,7 +4766,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416624,
@@ -4636,7 +4825,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416625,
@@ -4695,7 +4884,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416626,
@@ -4754,7 +4943,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416627,
@@ -4813,7 +5002,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416610,
@@ -4872,7 +5061,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416611,
@@ -4931,7 +5120,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416612,
@@ -4990,7 +5179,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416613,
@@ -5049,7 +5238,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416614,
@@ -5108,7 +5297,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416615,
@@ -5167,7 +5356,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416616,
@@ -5226,7 +5415,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416617,
@@ -5285,7 +5474,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416618,
@@ -5344,7 +5533,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416601,
@@ -5403,7 +5592,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416602,
@@ -5462,7 +5651,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416603,
@@ -5521,7 +5710,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416604,
@@ -5580,7 +5769,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416605,
@@ -5639,7 +5828,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416606,
@@ -5698,7 +5887,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416607,
@@ -5757,7 +5946,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416608,
@@ -5816,7 +6005,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416609,
@@ -5875,7 +6064,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416592,
@@ -5934,7 +6123,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416593,
@@ -5993,7 +6182,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416594,
@@ -6052,7 +6241,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416595,
@@ -6111,7 +6300,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416596,
@@ -6170,7 +6359,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416597,
@@ -6229,7 +6418,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416598,
@@ -6288,7 +6477,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416599,
@@ -6347,7 +6536,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416600,
@@ -6406,7 +6595,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416583,
@@ -6465,7 +6654,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416584,
@@ -6524,7 +6713,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416585,
@@ -6583,7 +6772,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416586,
@@ -6642,7 +6831,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416587,
@@ -6701,7 +6890,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416588,
@@ -6760,7 +6949,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416589,
@@ -6819,7 +7008,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416590,
@@ -6878,7 +7067,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416591,
@@ -6937,7 +7126,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416574,
@@ -6996,7 +7185,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416575,
@@ -7055,7 +7244,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416576,
@@ -7114,7 +7303,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416577,
@@ -7173,7 +7362,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416578,
@@ -7232,7 +7421,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416579,
@@ -7291,7 +7480,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416580,
@@ -7350,7 +7539,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416581,
@@ -7409,7 +7598,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416582,
@@ -7468,7 +7657,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416565,
@@ -7527,7 +7716,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416566,
@@ -7586,7 +7775,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416567,
@@ -7645,7 +7834,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416568,
@@ -7704,7 +7893,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416569,
@@ -7763,7 +7952,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416570,
@@ -7822,7 +8011,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416571,
@@ -7881,7 +8070,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416572,
@@ -7940,7 +8129,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416573,
@@ -7999,7 +8188,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416556,
@@ -8058,7 +8247,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416557,
@@ -8117,7 +8306,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416558,
@@ -8176,7 +8365,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416559,
@@ -8235,7 +8424,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416560,
@@ -8294,7 +8483,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416561,
@@ -8353,7 +8542,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416562,
@@ -8412,7 +8601,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416563,
@@ -8471,7 +8660,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416564,
@@ -8530,7 +8719,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416547,
@@ -8589,7 +8778,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416548,
@@ -8648,7 +8837,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416549,
@@ -8707,7 +8896,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416550,
@@ -8766,7 +8955,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416551,
@@ -8825,7 +9014,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416552,
@@ -8884,7 +9073,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416553,
@@ -8943,7 +9132,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416554,
@@ -9002,7 +9191,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416555,
@@ -9061,7 +9250,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416538,
@@ -9120,7 +9309,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416539,
@@ -9179,7 +9368,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416540,
@@ -9238,7 +9427,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416541,
@@ -9297,7 +9486,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416542,
@@ -9356,7 +9545,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416543,
@@ -9415,7 +9604,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416544,
@@ -9474,7 +9663,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416545,
@@ -9533,7 +9722,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416546,
@@ -9592,7 +9781,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416529,
@@ -9651,7 +9840,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416530,
@@ -9710,7 +9899,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416531,
@@ -9769,7 +9958,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416532,
@@ -9828,7 +10017,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416533,
@@ -9887,7 +10076,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416534,
@@ -9946,7 +10135,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416535,
@@ -10005,7 +10194,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416536,
@@ -10064,7 +10253,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416537,
@@ -10123,7 +10312,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416520,
@@ -10182,7 +10371,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416521,
@@ -10241,7 +10430,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416522,
@@ -10300,7 +10489,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416523,
@@ -10359,7 +10548,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416524,
@@ -10418,7 +10607,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416525,
@@ -10477,7 +10666,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416526,
@@ -10536,7 +10725,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416527,
@@ -10595,7 +10784,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416528,
@@ -10654,7 +10843,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416512,
@@ -10713,7 +10902,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416513,
@@ -10772,7 +10961,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416514,
@@ -10831,7 +11020,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416515,
@@ -10890,7 +11079,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416516,
@@ -10949,7 +11138,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416517,
@@ -11008,7 +11197,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416518,
@@ -11067,7 +11256,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416519,
@@ -11126,7 +11315,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416511,
@@ -11185,7 +11374,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416502,
@@ -11244,7 +11433,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416503,
@@ -11303,7 +11492,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416504,
@@ -11362,7 +11551,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416505,
@@ -11421,7 +11610,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416506,
@@ -11480,7 +11669,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416507,
@@ -11539,7 +11728,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416508,
@@ -11598,7 +11787,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416509,
@@ -11657,7 +11846,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416510,
@@ -11716,7 +11905,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416493,
@@ -11775,7 +11964,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416494,
@@ -11834,7 +12023,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416495,
@@ -11893,7 +12082,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416496,
@@ -11952,7 +12141,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416497,
@@ -12011,7 +12200,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416498,
@@ -12070,7 +12259,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416499,
@@ -12129,7 +12318,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416500,
@@ -12188,7 +12377,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416501,
@@ -12247,7 +12436,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416484,
@@ -12306,7 +12495,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416485,
@@ -12365,7 +12554,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416486,
@@ -12424,7 +12613,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416487,
@@ -12483,7 +12672,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416488,
@@ -12542,7 +12731,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416489,
@@ -12601,7 +12790,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416490,
@@ -12660,7 +12849,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416491,
@@ -12719,7 +12908,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416492,
@@ -12778,7 +12967,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416475,
@@ -12837,7 +13026,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416476,
@@ -12896,7 +13085,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416477,
@@ -12955,7 +13144,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416478,
@@ -13014,7 +13203,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416479,
@@ -13073,7 +13262,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416480,
@@ -13132,7 +13321,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416481,
@@ -13191,7 +13380,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416482,
@@ -13250,7 +13439,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416483,
@@ -13309,7 +13498,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416466,
@@ -13368,7 +13557,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416467,
@@ -13427,7 +13616,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416468,
@@ -13486,7 +13675,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416469,
@@ -13545,7 +13734,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416470,
@@ -13604,7 +13793,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416471,
@@ -13663,7 +13852,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416472,
@@ -13722,7 +13911,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416473,
@@ -13781,7 +13970,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416474,
@@ -13840,7 +14029,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416457,
@@ -13899,7 +14088,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416458,
@@ -13958,7 +14147,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416459,
@@ -14017,7 +14206,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416460,
@@ -14076,7 +14265,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416461,
@@ -14135,7 +14324,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416462,
@@ -14194,7 +14383,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416463,
@@ -14253,7 +14442,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416464,
@@ -14312,7 +14501,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416465,
@@ -14371,7 +14560,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416448,
@@ -14430,7 +14619,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416449,
@@ -14489,7 +14678,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416450,
@@ -14548,7 +14737,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416451,
@@ -14607,7 +14796,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416452,
@@ -14666,7 +14855,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416453,
@@ -14725,7 +14914,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416454,
@@ -14784,7 +14973,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416455,
@@ -14843,7 +15032,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416456,
@@ -14902,7 +15091,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416439,
@@ -14961,7 +15150,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416440,
@@ -15020,7 +15209,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416441,
@@ -15079,7 +15268,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416442,
@@ -15138,7 +15327,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416443,
@@ -15197,7 +15386,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416444,
@@ -15256,7 +15445,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416445,
@@ -15315,7 +15504,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416446,
@@ -15374,7 +15563,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416447,
@@ -15433,7 +15622,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416430,
@@ -15492,7 +15681,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416431,
@@ -15551,7 +15740,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416432,
@@ -15610,7 +15799,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416433,
@@ -15669,7 +15858,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416434,
@@ -15728,7 +15917,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416435,
@@ -15787,7 +15976,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416436,
@@ -15846,7 +16035,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416437,
@@ -15905,7 +16094,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416438,
@@ -15964,7 +16153,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416421,
@@ -16023,7 +16212,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416422,
@@ -16082,7 +16271,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416423,
@@ -16141,7 +16330,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416424,
@@ -16200,7 +16389,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416425,
@@ -16259,7 +16448,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416426,
@@ -16318,7 +16507,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416427,
@@ -16377,7 +16566,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416428,
@@ -16436,7 +16625,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416429,
@@ -16495,7 +16684,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416412,
@@ -16554,7 +16743,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416413,
@@ -16613,7 +16802,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416414,
@@ -16672,7 +16861,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416415,
@@ -16731,7 +16920,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416416,
@@ -16790,7 +16979,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416417,
@@ -16849,7 +17038,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416418,
@@ -16908,7 +17097,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416419,
@@ -16967,7 +17156,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416420,
@@ -17026,7 +17215,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416403,
@@ -17085,7 +17274,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416404,
@@ -17144,7 +17333,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416405,
@@ -17203,7 +17392,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416406,
@@ -17262,7 +17451,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416407,
@@ -17321,7 +17510,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416408,
@@ -17380,7 +17569,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416409,
@@ -17439,7 +17628,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416410,
@@ -17498,7 +17687,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416411,
@@ -17557,7 +17746,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416394,
@@ -17616,7 +17805,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416395,
@@ -17675,7 +17864,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416396,
@@ -17734,7 +17923,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416397,
@@ -17793,7 +17982,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416398,
@@ -17852,7 +18041,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416399,
@@ -17911,7 +18100,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416400,
@@ -17970,7 +18159,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416401,
@@ -18029,7 +18218,7 @@
                 "id": 1495,
                 "startDate": "2022-08-05",
                 "endDate": "2023-05-27",
-                "currentMatchday": 1,
+                "currentMatchday": 3,
                 "winner": null
             },
             "id": 416402,

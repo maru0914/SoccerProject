@@ -321,6 +321,8 @@ body {
 
 /* end of mypage navbar */
 
+/* dashboard */
+
 /* cards */
 .card-common {
   box-shadow: 1px 2px 5px #999;
@@ -350,3 +352,17 @@ body {
 }
 
 /* end of cards */
+
+/* table */
+
+.favorite_team_standing {
+background-color: rgb(187 82 82 / 91%);
+}
+
+.favorite_team_standing:hover {
+background-color: rgb(187 82 82 / 96%)!important;
+}
+
+/* end of table */
+
+/* end of dashboard */

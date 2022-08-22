@@ -2,19 +2,17 @@
 {% load localize_tags %}
 {% block title %} 
 {% if league %}
-{{ league.name | league_to_ja }} 試合日程 {{ block.super }}
+{{ league.name | league_to_ja }}試合日程 -{{ block.super }}
 {% elif team %}
-{{ team.name | team_to_ja }} 試合日程 {{ block.super }}
+{{ team.name | team_to_ja }}試合日程 -{{ block.super }}
 {% else %}
-4大リーグ 試合日程 {{ block.super }}
+4大リーグ試合日程 -{{ block.super }}
 {% endif %}
 {% endblock %}
 {% block content %}
 <section class="schedule">
-  <div class="container">
-    <div class="content_schedule">
+  <div class="container-fluid">
       {% include "base_schedule.html" %}
-    </div>
   </div>
 </section>
 {% endblock %}

@@ -1,17 +1,41 @@
+from django.contrib import messages
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.views import LoginView
-from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import render
-from django.urls import reverse_lazy
-from django.views.generic.edit import CreateView
+from django.shortcuts import render, redirect
 
+from accounts.forms import RegisterUserForm
 
-class SignUpView(SuccessMessageMixin, CreateView):
-    template_name = 'accounts/signup.html'
-    success_url = reverse_lazy('accounts:login')
-    form_class = UserCreationForm
-    success_message = "登録が完了しました"
+def login_user(request):
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            messages.success(request, "ログインしました。")
+            return redirect('/main/home')
+        else:
+            messages.success(request, "ログインに失敗しました。再度試してください。")
+            return redirect('/accounts/login_user')
+    else:
+        return render(request, 'accounts/login.html')
 
+def logout_user(request):
+    logout(request)
+    messages.success(request, "ログアウトしました。")
+    return redirect('/main/home')
 
-class LoginPageView(LoginView):
-    template_name = 'accounts/login.html'
+def register_user(request):
+    if request.method == "POST":
+        form = RegisterUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            messages.success(request, ("アカウント登録が完了しました"))
+            return redirect('/main/home')
+    else:
+        form = RegisterUserForm()
+    return render(request, 'accounts/register_user.html', {'form': form})

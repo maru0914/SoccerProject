@@ -1,22 +1,368 @@
-/*---------------------------------
-　LEAGUE_TOP
----------------------------------*/
-.league_top img{
-    width: 20px;
-    height: 20px;
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url(/media/top.jpg) no-repeat center center /cover;
 }
 
-p.right_link_two_lines {
-    margin: -3.5em 0 10px;
-    text-align: right;
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
-.right_link {
-    text-align: right;
+/* navbar */
+.nav-menu {
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+    padding: 30px;
+    transition: all .7s;
+  }
+
+.dropdown-menu {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+}
+.menu-item {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color .5s
 }
 
-h1{
-    font-size:28px;
+.menu-item:hover {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  color: #70aed2
+}
+
+.nav-active {
+  color: #70aed2;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+
+/* end of navbar */
+
+/* message */
+.message {
+  padding-top: 120px;
+  background-clip: padding-box;
+  position: absolute;
+  right: 0;
+}
+
+.alert {
+  margin-bottom: 0;
+}
+/* end of message */
+
+/* header */
+
+.banner-heading:first-letter {
+    font-family: 'Great Vibes', cursive;
+    font-size: 10rem;
+    margin-right: 20px;
 }
 
 
+/* common-title */
+.common-title {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px #aaa;
+    transition: all .5s;
+}
+
+
+
+.common-title:hover {
+    transform: translate(-5px, -3px);
+    text-shadow: 2px 5px 20px #aaa
+}
+/* end of common-title */
+
+/* gallary */
+
+
+.gallery-img {
+    width:  500px;
+    backface-visibility: hidden;
+    transition: all .5s
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.first-row {
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.second-row {
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.change .first-row, .change .second-row {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* end of gallary */
+
+
+/* standing */
+.standing {
+  padding-top: 120px;
+  background: #151f20;
+  background-clip: padding-box;
+}
+
+.underline {
+  width: 150px;
+  border: 3px solid #eee;
+  margin: auto;
+}
+
+.cl-border {
+  border-left-color: #037afe;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+.el-border {
+  border-left-color: #f28709;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+.ecl-border {
+  border-left-color: #00e782;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+.relegation-border {
+  border-left-color: #881b1e;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+/* end of standing */
+
+/* schedule */
+.schedule {
+  padding-top: 120px;
+  background: #151f20;
+  background-clip: padding-box;
+}
+
+.schedule-link {
+  color: #eee;
+  transition: color .5s;
+}
+
+.schedule-link:hover {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  color: #70aed2;
+}
+
+.schedule-logo {
+  background-color: rgb(218 218 218);
+}
+
+.page-link {
+  color: antiquewhite;
+  background-color: #27282c;
+  border-color: #535659;
+}
+
+.page-link:hover {
+  color: antiquewhite;
+  background-color: #393d40;
+}
+
+.page-item.active .page-link {
+    color: white;
+    background-color: #402e37;
+    border-color: #535659;
+}
+
+/* end of schedule */
+
+/* login */
+
+.login {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url(/media/top.jpg) no-repeat center center /cover;
+  height: 100vh;
+  padding-top: 120px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  background: rgba(250, 250, 250, .8);
+  font-size: 18px;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.login-form input:focus {
+  background: #ffff;
+  box-shadow: none;
+}
+
+.login-btn:hover {
+  background-color: #e63c4c;
+}
+/* end of login */
+
+/* register */
+
+.register {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url(/media/top.jpg) no-repeat center center /cover;
+  height: 100vh;
+  padding-top: 120px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"] {
+  background: rgba(250, 250, 250, .8);
+  font-size: 18px;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.register-form input:focus {
+  background: #ffff;
+  box-shadow: none;
+}
+
+.register-btn:hover {
+  background-color: #e63c4c;
+}
+/* end of register */
+
+/* mypage navbar */
+
+.sidebar {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url(/media/top.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 7px 25px #999;
+}
+
+.mypage-icon {
+  background-color: #ffff;
+}
+
+.bottom-border {
+  border-bottom: 1px groove #eee;
+}
+
+.sidebar-link {
+  transition:all .4s;
+}
+
+.sidebar-link:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+
+.current {
+  background-color: #f44336;
+  border-radius: 7px;
+  box-shadow: 0px 9px 0px #111;
+  transition: all .3s;
+}
+
+.current:hover {
+  background-color: #f66436;
+  border-radius: 7px;
+  box-shadow: 0px 10px 0px #111;
+  transform: translateY(-1px);
+}
+
+
+@media(max-width: 768px) {
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+  .top-navbar {
+    position: static;
+  }
+}
+
+/* end of mypage navbar */
+
+/* dashboard */
+
+/* cards */
+.card-common {
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+
+.card-common:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+
+.match-info-icon {
+  position: absolute;
+  top: 25px;
+}
+
+.card-img {
+  width:  500px;
+  backface-visibility: hidden;
+  transition: all .5s;
+  height: 140px;
+  border: none;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+/* end of cards */
+
+/* table */
+
+.favorite_team_standing {
+background-color: rgb(187 82 82 / 91%);
+}
+
+.favorite_team_standing:hover {
+background-color: rgb(187 82 82 / 96%)!important;
+}
+
+/* end of table */
+
+/* end of dashboard */

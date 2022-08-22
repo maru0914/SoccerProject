@@ -1,0 +1,152 @@
+{% extends "mypage/base_mypage.html" %}
+{% load localize_tags %}
+{% block title %}マイページ -{{ block.super }}{% endblock %}
+{% block content %}
+<!-- cards -->
+
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+				<div class="row pt-md-5 mt-md-3 mb-5 align-items-center">
+					<div class="col-xl-3 col-sm-6 p-2">
+					<h3 class="text-muted text-center mb-3">心のクラブ</h3>
+						<div class="card card-common">
+							<div class="card-body">
+								<div class="d-flex justify-content-between">
+									<img src="{{ team.crest }}" class="img-thumbnail card-img">
+								</div>
+							</div>
+							<div class="card-footer text-secondary text-center">
+								<span>{{ team.name | team_to_ja}}</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-sm-6 p-2">
+					<h3 class="text-muted text-center mb-3">順位</h3>
+						<div class="card card-common">
+							<div class="card-body">
+								<div class="d-flex justify-content-between">
+									<i class="fa-solid fa-ranking-star fa-3x text-warning" ></i>
+									<div class="text-center text-secondary">
+										<h1 class="display-4 mb-0">{{ team.standing_set.first.rank }}位</h1>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer text-secondary text-center">
+								<h4>{{ team.league.name | league_to_ja }}</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-sm-6 p-2">
+					<h3 class="text-muted text-center mb-3">前節</h3>
+						<div class="card card-common">
+							<div class="card-body">
+								<div class="justify-content-between">
+								{% if last_match.result == 'win' %}
+									<i class="fa-solid fa-x fa-3x text-info match-info-icon"></i>
+								{% elif last_match.result == 'lose' %}
+									<i class="fa-solid fa-x fa-3x text-danger match-info-icon"></i>
+								{% else %}
+									<i class="fa-solid fa-minus fa-3x text-muted match-info-icon"></i>
+								{% endif %}
+									<div class="text-right pr-5 text-secondary">
+										<h1 class="display-4 mb-0">{{ last_match.home_score }}-{{ last_match.away_score }}</h1>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer text-secondary text-center">
+								<h5>VS {{ last_match.opponent | team_to_ja }}</h5>
+								<h5>{{ last_match.date | date:"n月j日G:i(D)" }}</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-sm-6 p-2">
+					<h3 class="text-muted text-center mb-3">次節</h3>
+						<div class="card card-common">
+							<div class="card-body">
+								<div class="d-flex justify-content-between">
+									<i class="fa-solid fa-angles-right fa-3x text-danger"></i>
+									<div class="text-right pr-5 text-secondary">
+										<h1 class="display-4 mb-0">----</h1>
+									</div>
+								</div>
+							</div>
+							<div class="card-footer text-secondary text-center">
+								<h5>VS {{ next_five_matches.0.opponent | team_to_ja}}</h5>
+								<h5>{{ next_five_matches.0.date | date:"n月j日G:i(D)" }}</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end of cards -->
+<!-- tables -->
+<section>
+	<div class="container-fluid">
+	  <div class="row mb-5">
+		<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+		  <div class="row align-items-center" >
+			<div class="col-xl-6 col-12 mb-4 mb-xl-0">
+			  <h3 class="text-muted text-center mb-3">日程</h3>
+			  <table class="table table-dark table-hover text-center">
+				<thead>
+				  <tr class="text-muted">
+					<th>日時</th>
+					<th>マッチデイ</th>
+					<th>VS</th>
+				  </tr>
+				</thead>
+				<tbody>
+					{% for match in next_five_matches %}
+				  <tr>
+					<td>{{ match.date | date:"n月j日G:i(D)" }}</td>
+					<td>{{ team.league.name | league_to_ja }} 第{{ match.match_day }}節</td>
+					<td>{{ match.opponent | team_to_ja}}</td>
+				  </tr>
+				  	{% endfor %}
+				</tbody>
+			  </table>
+			  <div class="text-right">
+				<a href="{% url 'main:schedule' key=team.id %}">詳細</a>
+			  </div>
+			</div>
+			<div class="col-xl-6 col-12">
+			  <h3 class="text-muted text-center mb-3">順位表</h3>
+			  <table class="table table-dark table-hover text-center">
+				<thead>
+				  <tr class="text-muted">
+					<th>順位</th>
+					<th>チーム名</th>
+					<th>勝点</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  {% for standing in five_standings %}
+				  <tr>
+					{% if standing.team.name == team.name %}
+				  <tr class="favorite_team_standing">
+					{% else %}
+				  <tr>
+					{% endif %}
+					<th>{{ standing.rank }}</th>
+					<td><img src="{{ standing.team.crest }}" width="20" height="20" alt="" align="center"> {{ standing.team.name | team_to_ja}}</td>
+					<td>{{ standing.point }}</td>
+				  </tr>
+				  {% endfor %}
+				</tbody>
+			  </table>
+			  <div class="text-right">
+				<a href="{% url 'main:standing' league_code=team.league.code %}">詳細</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <!-- end of tables -->
+{% endblock %}

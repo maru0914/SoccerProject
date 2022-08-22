@@ -320,3 +320,33 @@ body {
 }
 
 /* end of mypage navbar */
+
+/* cards */
+.card-common {
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+
+.card-common:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+
+.match-info-icon {
+  position: absolute;
+  top: 25px;
+}
+
+.card-img {
+  width:  500px;
+  backface-visibility: hidden;
+  transition: all .5s;
+  height: 140px;
+  border: none;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+/* end of cards */

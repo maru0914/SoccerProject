@@ -9,8 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-
+  {% comment %} <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script> {% endcomment %}
+  <script src="https://kit.fontawesome.com/9463059c8b.js" crossorigin="anonymous"></script>
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
@@ -32,7 +32,7 @@
                 <a href="#" class="text-white">{{ user.username }}</a>
               </div>
               <ul class="navbar-nav flex-column mt-4">
-                <li class="nav-item current"><a href="#" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home text-light fa-lg mr-3"></i>ボード</a></li>
+                <li class="nav-item current"><a href="#" class="nav-link text-white p-3 mb-2 current"><i class="fa-solid fa-house text-light fa-lg mr-3"></i>ボード</a></li>
                 <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>開発中</a></li>
               </ul>
       

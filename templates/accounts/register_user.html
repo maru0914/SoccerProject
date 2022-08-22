@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load localize_tags %}
+{% block title %}アカウント登録 -{{ block.super }}{% endblock %}
+{% block content %}
+<section class="register d-flex align-items-center">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-6 col-md-8 col-sm-10 my-4 mx-auto">
+        {% if form.errors %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          フォームの入力に誤りがあります。
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endif %}
+        <div class="shadow p-4 mb-5 bg-body rounded">
+          <h1 class="text-light font-weight-light text-center mb-5">アカウント登録</h1>
+          <form action="{% url 'accounts:register_user' %}" method="POST" class="register-form">
+            <div class="form-group">
+              {% csrf_token %}  
+                {{ form }}
+              <input type="submit" class="form-control btn-danger register-btn" value="登録">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

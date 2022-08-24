@@ -1,0 +1,55 @@
+{% extends "mypage/base_mypage.html" %}
+{% load localize_tags %}
+{% block title %}ダッシュボード -{{ block.super }}{% endblock %}
+{% block content %}
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+				<div class="row pt-md-5 mt-md-3 mb-5 align-items-center">
+                    <!-- gallery -->
+                    <!-- title -->
+                    <div class="row text-muted text-center gallery-title">
+                        <div class="col m-4">
+                            <h1 class="display-4 mb-4">あなたの心のチームは？</h1>
+                            <div class="underline-dark mb-4"></div>
+                            <p class="lead">1チームだけ選択し、確定ボタンを押してください</p>
+                        </div>
+                    </div>
+                    <!-- end of title --> 
+                    <div class="container">
+                        <ul class="list-inline text-center text-uppercase font-weight-bold m-4">
+                            <li class="list-inline-item gallery-list-item active-item" data-filter="all">All<span class="mx-md-5 mx-3 text-muted">/</span></li>
+                            <li class="list-inline-item gallery-list-item" data-filter="PL">プレミア<span class="mx-md-5 mx-3 text-muted">/</span></li>
+                            <li class="list-inline-item gallery-list-item" data-filter="PD">リーガ<span class="mx-md-5 mx-3 text-muted">/</span></li>
+                            <li class="list-inline-item gallery-list-item" data-filter="SA">セリエA<span class="mx-md-5 mx-3 text-muted">/</span></li>
+                            <li class="list-inline-item gallery-list-item" data-filter="BL1">ブンデス</li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <form method="post" action="{% url 'mypage:register_team' %}">
+                                {% csrf_token %}
+                                <ul class="select-team-list">
+                                    {% for team in teams %}
+                                            <li class="filter {{ team.league.code }}">
+                                                <label>
+                                                    <input type="radio" name="selected-team" value="{{ team.id }}">
+                                                    <img class="gallery-team" src="{{ team.crest }}" width="100" height="100" title="{{ team.name | team_to_ja }}">
+                                                </label>
+                                            </li>
+                                    {% endfor %}
+                                </ul>
+                                <div class="text-center">
+                                    <input type="submit" class="btn btn-primary btn-lg" value="確定">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end of gallery -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

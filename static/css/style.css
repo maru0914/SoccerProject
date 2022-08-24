@@ -321,6 +321,16 @@ body {
 
 /* end of mypage navbar */
 
+/* mypage message */
+.mypage-message {
+  background-clip: padding-box;
+  position: absolute;
+  right: 0;
+  padding-top: 40px;
+}
+/* end of mypage message */
+
+
 /* dashboard */
 
 /* cards */
@@ -340,10 +350,9 @@ body {
 }
 
 .card-img {
-  width:  500px;
+  width:  100px;
   backface-visibility: hidden;
   transition: all .5s;
-  height: 140px;
   border: none;
 }
 
@@ -366,3 +375,58 @@ background-color: rgb(187 82 82 / 96%)!important;
 /* end of table */
 
 /* end of dashboard */
+
+/* select_team */
+.gallery-title {
+  width: 100%;
+}
+
+.underline-dark {
+  width: 200px;
+  border: 3px solid #888;
+  margin: auto;
+}
+
+.gallery-list-item {
+  color: #777;
+  cursor: pointer;
+  user-select: none;
+}
+
+.active-item {
+  color: #70aed2
+}
+
+.gallery-team {
+  transition: transform .5s;
+}
+.gallery-team:hover {
+  transform: scale(1.05);
+}
+
+.select-team-list {
+  list-style-type: none;
+}
+
+.select-team-list li {
+  display: inline-block;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #ad3030d4;
+}
+/* end of select_team */

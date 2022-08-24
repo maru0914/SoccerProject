@@ -1,15 +1,17 @@
 """Views for mypage app.
-It's implemented by Class Based View.
 """
 from datetime import datetime
 
 from django.db.models import Q
-from django.views.generic import TemplateView
+from django.shortcuts import redirect, render
+from django.views import View
+from django.views.generic import ListView
 
+from accounts.models import MyUser
 from main.models import Match, Standing, Team
 
 
-class DashboardView(TemplateView):
+class DashboardView(View):
     """
     Display an dashboard for specific user.
 
@@ -30,10 +32,12 @@ class DashboardView(TemplateView):
     """
     template_name = 'mypage/dashboard.html'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        # TODO : get team id from user table.(specific login user)
-        team_id = 59
+    def get(self, request):
+        """get method for DashboardView"""
+        context = {}
+        if not self.request.user.favorite_team:
+            return redirect('mypage:select_team')
+        team_id = self.request.user.favorite_team.id
         team = Team.objects.get(id=team_id)
         context['team'] = team
 
@@ -66,18 +70,21 @@ class DashboardView(TemplateView):
             last_match['opponent'] = match.home.name
             team_score = match.away_score
             opponent_score = match.home_score
-        if team_score > opponent_score:
-            last_match['result'] = 'win'
-        elif team_score < opponent_score:
-            last_match['result'] = 'lose'
+        if team_score is None:
+            last_match['result'] = 'updating'
         else:
-            last_match['result'] = 'draw'
+            if team_score > opponent_score:
+                last_match['result'] = 'win'
+            elif team_score < opponent_score:
+                last_match['result'] = 'lose'
+            else:
+                last_match['result'] = 'draw'
         last_match['home_score'] = match.home_score
         last_match['away_score'] = match.away_score
 
         context['last_match'] = last_match
 
-        return context
+        return render(request, self.template_name, context)
 
     def get_five_standings(self, team):
         """get standings of 5 surrounding team
@@ -89,19 +96,49 @@ class DashboardView(TemplateView):
             standings: list of standings. (5 items surrounding args team)
         """
         rank = team.standing_set.first().rank
-        if rank == 1:
-            view_ranks = range(rank, rank + 5)
-        elif rank == 2:
-            view_ranks = range(rank - 1, rank + 4)
-        elif rank == 3:
-            view_ranks = range(rank - 2, rank + 3)
-        elif rank == 4:
-            view_ranks = range(rank - 3, rank + 2)
-        elif rank == 5:
-            view_ranks = range(rank - 4, rank + 1)
+        league_code = team.league.code
         league_standings = Standing.objects.filter(league__name=team.league.name)
+        bundes_lookup = {
+            1: range(rank, rank + 5),
+            2: range(rank - 1, rank + 4),
+            17: range(rank - 3, rank + 2),
+            18: range(rank - 4, rank + 1)
+            }
+        other_lookup = {
+            1: range(rank, rank + 5),
+            2: range(rank - 1, rank + 4),
+            19: range(rank - 3, rank + 2),
+            20: range(rank - 4, rank + 1)
+            }
+        if league_code == 'BL1':
+            view_ranks = bundes_lookup.get(rank, range(rank-2, rank + 3))
+        else:
+            view_ranks = other_lookup.get(rank, range(rank-2, rank + 3))
         five_standings = []
         for standing in league_standings:
             if standing.rank in view_ranks:
                 five_standings.append(standing)
         return five_standings
+
+
+class SelectTeamView(ListView):
+    """
+    Display a list of teams.
+    """
+    template_name = 'mypage/select_team.html'
+    model = Team
+    context_object_name = 'teams'
+
+    def get_queryset(self):
+        return Team.objects.all()
+
+def register_team(request):
+    """Register a favorite team."""
+    user = MyUser.objects.get(id=request.user.id)
+    data = request.POST
+    favorite_team = data.get('selected-team')
+    if not favorite_team:
+        return redirect('mypage:select_team')
+    user.favorite_team = Team.objects.get(id=favorite_team)
+    user.save()
+    return redirect('mypage:dashboard')

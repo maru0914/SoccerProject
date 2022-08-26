@@ -1,6 +1,10 @@
-/data/temp
+db.sqlite3
 *.pyc
 test.py
+SoccerProject/settings.py
+data
+.ebextensions
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

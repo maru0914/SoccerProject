@@ -25,9 +25,10 @@ TEMPLATE_DIR = BASE_DIR / 'templates'
 SECRET_KEY = 'vd6grsiz(r@)kvg1=go(@8d2$rusr2&mqty$+rhobrpdlj+-5!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-env.eba-zhppe8t2.ap-northeast-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -122,6 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR,]
+STATIC_ROOT = 'static'
+# STATICFILES_DIRS = [STATIC_DIR,]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'

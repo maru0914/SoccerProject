@@ -1,3 +1,7 @@
+Site URL is below
+
+http://django-env.eba-zhppe8t2.ap-northeast-1.elasticbeanstalk.com/main/home/
+
 # For Supportes
 An website for Japanese people to get information about soccer created by Django.
 <br><br>

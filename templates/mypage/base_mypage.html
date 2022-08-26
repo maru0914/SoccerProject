@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>{% block title %}For Supporters{% endblock %}</title>
-  <link rel="icon" href="/media/title-img.png">
+  <link rel="icon" href="/static/images/title-img.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -29,7 +29,7 @@
             <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
               <a href="{% url 'main:home' %}" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">For Supporters</a>
               <div class="bottom-border pb-3">
-                <img src="/media/mypage_icon.png" width="50" height="30" class="rounded-circle mr-3 mypage-icon">
+                <img src="/static/images/mypage_icon.png" width="50" height="30" class="rounded-circle mr-3 mypage-icon">
                 <a href="#" class="text-white">{{ user.username }}</a>
               </div>
               <ul class="navbar-nav flex-column mt-4">

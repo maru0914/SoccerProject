@@ -3,8 +3,9 @@ db.sqlite3
 test.py
 SoccerProject/settings.py
 data/*
+main/management/*
 .ebextensions
-
+.ebignore
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

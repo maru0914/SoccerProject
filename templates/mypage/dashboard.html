@@ -131,6 +131,7 @@
 				  <tr class="text-muted">
 					<th>順位</th>
 					<th>チーム名</th>
+					<th>試合</th>
 					<th>勝点</th>
 				  </tr>
 				</thead>
@@ -144,6 +145,7 @@
 					{% endif %}
 					<th>{{ standing.rank }}</th>
 					<td><img src="{{ standing.team.crest }}" width="20" height="20" alt="" align="center"> {{ standing.team.name | team_to_ja}}</td>
+					<td>{{ standing.played }}</td>
 					<td>{{ standing.point }}</td>
 				  </tr>
 				  {% endfor %}

@@ -1,6 +1,7 @@
 """Models for main app.
 """
 from django.db import models
+from django.utils import timezone
 
 
 class League(models.Model):
@@ -19,7 +20,8 @@ class LeagueJapanese(models.Model):
     """
     Stores a league name in Japanese, related to :model:`main.League`.
     """
-    league = models.OneToOneField(League, on_delete=models.CASCADE, primary_key=True)
+    league = models.OneToOneField(
+        League, on_delete=models.CASCADE, primary_key=True)
     name = models.CharField(max_length=40)
 
     class Meta:
@@ -36,13 +38,16 @@ class Team(models.Model):
 
     class Meta:
         db_table = 'team'
-        constraints = [models.UniqueConstraint(fields=['name', 'league'], name='unique_team')]
+        constraints = [models.UniqueConstraint(
+            fields=['name', 'league'], name='unique_team')]
+
 
 class TeamJapanese(models.Model):
     """
     Stores a team name in Japanese, related to :model:`main.Team`.
     """
-    team = models.OneToOneField(Team, on_delete=models.CASCADE, primary_key=True)
+    team = models.OneToOneField(
+        Team, on_delete=models.CASCADE, primary_key=True)
     name = models.CharField(max_length=40)
 
     class Meta:
@@ -60,7 +65,8 @@ class Season(models.Model):
 
     class Meta:
         db_table = 'season'
-        constraints = [models.UniqueConstraint(fields=['year', 'league'], name='unique_season')]
+        constraints = [models.UniqueConstraint(
+            fields=['year', 'league'], name='unique_season')]
 
 
 class Match(models.Model):
@@ -69,11 +75,14 @@ class Match(models.Model):
     """
     date = models.DateTimeField()
     match_day = models.PositiveIntegerField()
-    home = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='home_matches')
-    away = models.ForeignKey(Team, on_delete=models.CASCADE, related_name='away_matches')
+    home = models.ForeignKey(
+        Team, on_delete=models.CASCADE, related_name='home_matches')
+    away = models.ForeignKey(
+        Team, on_delete=models.CASCADE, related_name='away_matches')
     season = models.ForeignKey(Season, on_delete=models.CASCADE)
     home_score = models.PositiveIntegerField(null=True)
     away_score = models.PositiveIntegerField(null=True)
+    update_at = models.DateTimeField(default=timezone.now())
 
     class Meta:
         db_table = 'match'
@@ -97,8 +106,10 @@ class Standing(models.Model):
     goals_difference = models.IntegerField()
     team = models.ForeignKey(Team, on_delete=models.CASCADE)
     league = models.ForeignKey(League, on_delete=models.CASCADE)
+    update_at = models.DateTimeField(default=timezone.now())
 
     class Meta:
         db_table = 'standing'
-        constraints = [models.UniqueConstraint(fields=['team', 'league'], name='unique_standing')]
+        constraints = [models.UniqueConstraint(
+            fields=['team', 'league'], name='unique_standing')]
         ordering = ['rank']

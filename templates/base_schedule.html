@@ -21,8 +21,12 @@
         <tr class="text-muted">
           <th>日程</th>
           <th>マッチデイ</th>
+          {% if team %}
+          <th>相手チーム</th>
+          {% else %}
           <th>ホームチーム</th>
           <th>アウェーチーム</th>
+          {% endif %}
         </tr>
       </thead>
       <tbody>
@@ -42,6 +46,21 @@
             {% endif %}
             第{{ match.match_day }}節
           </td>
+          {% if team %}
+          <td>
+            {% if match.home.name == team.name %}
+            <a href="{% url 'main:schedule' key=match.away.id  %}" class="schedule-link">
+              (H)
+              <img src="{{ match.away.crest }}" width="15" height="15" alt="" align="center">{{ match.away.name | team_to_ja }}
+            </a>
+            {% else %}
+            <a href="{% url 'main:schedule' key=match.home.id  %}" class="schedule-link">
+              (A)
+              <img src="{{ match.home.crest }}" width="15" height="15" alt="" align="center">{{ match.home.name | team_to_ja }}
+            </a>
+            {% endif %}
+          </td>
+          {% else %}
           <td>
             <a href="{% url 'main:schedule' key=match.home.id  %}" class="schedule-link">
               <img src="{{ match.home.crest }}" width="15" height="15" alt="" align="center"> {{ match.home.name | team_to_ja }}
@@ -52,6 +71,7 @@
               <img src="{{ match.away.crest }}"  width="15" height="15" alt="" align="center"> {{ match.away.name | team_to_ja }}
             </a>
           </td>
+          {% endif %}
         </tr>
         {% endfor %}
       </tbody>

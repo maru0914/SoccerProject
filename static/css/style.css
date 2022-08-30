@@ -175,6 +175,17 @@ body {
   border-left-width: 2px;
 }
 
+.standing-table {
+  white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  .standing-table {
+    overflow-x: auto;
+    display: block;
+  }
+}
+
 /* end of standing */
 
 /* schedule */

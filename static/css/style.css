@@ -61,6 +61,12 @@ body {
   background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
 }
 
+@media (max-width: 575px) {
+  .navbar-title {
+    display: none;
+  }
+}
+
 /* end of navbar */
 
 /* message */
@@ -103,12 +109,24 @@ body {
 }
 
 /* common-title */
-.common-title {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 500;
-  text-shadow: 2px 2px 5px #aaa;
-  transition: all .5s;
+@media (min-width: 768px) {
+  .common-title {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px #aaa;
+    transition: all .5s;
+  }
+}
+
+@media (max-width: 767px) {
+  .common-title {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px #aaa;
+    transition: all .5s;
+  }
 }
 
 

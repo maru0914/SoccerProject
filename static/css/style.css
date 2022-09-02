@@ -232,6 +232,10 @@ body {
     max-width: 150px;
     overflow-x: hidden;
   }
+
+  .teamname-hover {
+    background-color: #323539;
+  }
 }
 
 /* end of standing */

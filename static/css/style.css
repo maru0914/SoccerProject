@@ -217,10 +217,20 @@ body {
   white-space: nowrap;
 }
 
-@media (max-width: 992px) {
-  .standing-table {
-    overflow-x: auto;
-    display: block;
+.table-wrapper {
+  overflow-x: auto;
+  padding-left: 0px;
+}
+
+@media (max-width: 767px) {
+  .teamname {
+    position: sticky;
+    left: 0px;
+    background-color: #212529;
+    z-index: 1;
+    border-right: #535659 1px solid;
+    max-width: 150px;
+    overflow-x: hidden;
   }
 }
 

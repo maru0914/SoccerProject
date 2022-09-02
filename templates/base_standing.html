@@ -17,12 +17,12 @@
   </div>
   <!-- end of title -->
   <div class="row">
-    <div class="col-lg-8 col-md-9 col-sm-10 text-center mx-auto">
+    <div class="col-lg-8 col-md-9 col-sm-10 text-center mx-auto table-wrapper">
       <table class="table table-dark table-hover standing-table">
         <thead>
           <tr class="text-muted">
           <th>順位</th>
-          <th>チーム名</th>
+          <th class="teamname">チーム名</th>
           <th>勝点</th>
           <th>試合</th>
           <th>勝</th>
@@ -74,18 +74,18 @@
           <tr>
             <td>{{ standing.rank }}</td>
           {% endif %}
-            <td>
+            <td class="teamname">
             <img src="{{ standing.team.crest }}" width="20" height="20" alt="" align="center"> {{ standing.team.name | team_to_ja }}
             </td>
-            <td>{{ standing.point }}</td>
-            <td>{{ standing.played }}</td>
-            <td>{{ standing.won }}</td>
-            <td>{{ standing.draw }}</td>
-            <td>{{ standing.lost }}</td>
+            <td title="勝点">{{ standing.point }}</td>
+            <td title="試合">{{ standing.played }}</td>
+            <td title="勝">{{ standing.won }}</td>
+            <td title="分">{{ standing.draw }}</td>
+            <td title="負">{{ standing.lost }}</td>
             {% if standings|length > 10 %}
-            <td>{{ standing.goals_for }}</td>
-            <td>{{ standing.goals_against }}</td>
-            <td>{{ standing.goals_difference }}</td>
+            <td title="得点">{{ standing.goals_for }}</td>
+            <td title="失点">{{ standing.goals_against }}</td>
+            <td title="得失点">{{ standing.goals_difference }}</td>
             {% endif %}
           </tr>
           {% endfor %}

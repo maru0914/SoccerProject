@@ -113,7 +113,7 @@
 				<tbody>
 					{% for match in next_five_matches %}
 				  <tr>
-					<td>{{ match.date | date:"n月j日G:i(D)" }}</td>
+					<td>{{ match.date | date:"n月j日(D)G:i" }}</td>
 					<td>{{ team.league.name | league_to_ja }} 第{{ match.match_day }}節</td>
 					<td>{{ match.opponent | team_to_ja}}</td>
 				  </tr>

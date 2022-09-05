@@ -238,6 +238,20 @@ body {
   }
 }
 
+@media (max-width: 575px) {
+  .standing-table {
+    font-size: 0.5rem;
+  }
+
+  .standing-title {
+    font-size: 1.5rem;
+  }
+
+  .regulation-lead {
+    font-size: 1rem;
+  }
+}
+
 /* end of standing */
 
 /* schedule */
@@ -276,6 +290,22 @@ body {
   color: white;
   background-color: #402e37;
   border-color: #535659;
+}
+
+
+@media (max-width: 575px) {
+  .page-link {
+    font-size: 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .schedule-table {
+    font-size: 0.5rem;
+  }
+
+  .schedule-title {
+    font-size: 1.5rem;
+  }
 }
 
 /* end of schedule */

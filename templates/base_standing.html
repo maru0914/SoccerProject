@@ -2,9 +2,9 @@
   <!-- title -->
   <div class="row text-white text-center">
     <div class="col m-4">
-      <h1 class="display-4 mb-4">{{ league.name | league_to_ja }} 順位表</h1>
+      <h1 class="display-4 mb-4 standing-title">{{ league.name | league_to_ja }} 順位表</h1>
       <div class="underline mb-4"></div>
-      <p class="lead">
+      <p class="lead regulation-lead">
         {% if league.code == 'PD' or league.code == 'SA' %}
         1～4位:CL、5位:EL、6位:ECL  出場 | 18~20位:降格
         {% elif league.code == 'PL' %}

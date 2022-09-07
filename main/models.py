@@ -82,7 +82,7 @@ class Match(models.Model):
     season = models.ForeignKey(Season, on_delete=models.CASCADE)
     home_score = models.PositiveIntegerField(null=True)
     away_score = models.PositiveIntegerField(null=True)
-    update_at = models.DateTimeField(default=timezone.now())
+    update_at = models.DateTimeField(default=timezone.now)
 
     class Meta:
         db_table = 'match'
@@ -106,7 +106,7 @@ class Standing(models.Model):
     goals_difference = models.IntegerField()
     team = models.ForeignKey(Team, on_delete=models.CASCADE)
     league = models.ForeignKey(League, on_delete=models.CASCADE)
-    update_at = models.DateTimeField(default=timezone.now())
+    update_at = models.DateTimeField(default=timezone.now)
 
     class Meta:
         db_table = 'standing'

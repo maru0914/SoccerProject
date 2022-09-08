@@ -5,6 +5,9 @@ http://django-env.eba-zhppe8t2.ap-northeast-1.elasticbeanstalk.com/main/home/
 # For Supporters
 An website for Japanese people to get information about soccer created by Django.
 <br><br>
+Further develop is going on private repo.
+
+
 ## Mypage
 After signup, login, and setting your favorite team, 
 you can see various info of your favorite team.
